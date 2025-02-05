@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>21</order>
+        <published_ref/>
+        <question display_value="Time zone">30cc97dd832f5210a7c1e970deaad39c</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 13:35:33</sys_created_on>
+        <sys_id>1dccd7dd832f5210a7c1e970deaad364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>US/Central</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>question_choice_1dccd7dd832f5210a7c1e970deaad364</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 13:35:33</sys_updated_on>
+        <text>US/Central</text>
+        <value>US/Central</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=1dccd7dd832f5210a7c1e970deaad364"/>
+</record_update>
