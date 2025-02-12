@@ -44,7 +44,7 @@
         <mask_use_encryption>false</mask_use_encryption>
         <name>do_you_want_to_order_3d_model_or_3d_printed_item</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>200</order>
+        <order>300</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-12 14:36:44</sys_created_on>
         <sys_id>7c9ca3eb83671210a7c1e970deaad303</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Do you want to order 3D Model or 3D printed Item?</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
         <sys_update_name>item_option_new_7c9ca3eb83671210a7c1e970deaad303</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-12 14:53:08</sys_updated_on>
+        <sys_updated_on>2025-02-12 14:59:08</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

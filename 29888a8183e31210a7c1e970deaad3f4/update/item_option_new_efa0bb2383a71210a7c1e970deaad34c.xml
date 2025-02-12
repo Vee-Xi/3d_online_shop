@@ -10,7 +10,7 @@
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
-        <default_value>multicolor</default_value>
+        <default_value/>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -44,7 +44,7 @@
         <mask_use_encryption>false</mask_use_encryption>
         <name>filament_color</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>500</order>
+        <order>400</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -58,8 +58,8 @@
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual>undefined</reference_qual>
-        <reference_qual_condition>undefined</reference_qual_condition>
+        <reference_qual/>
+        <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-12 14:52:50</sys_created_on>
         <sys_id>efa0bb2383a71210a7c1e970deaad34c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Filament color</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
         <sys_update_name>item_option_new_efa0bb2383a71210a7c1e970deaad34c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-12 14:53:10</sys_updated_on>
+        <sys_updated_on>2025-02-12 14:59:08</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
