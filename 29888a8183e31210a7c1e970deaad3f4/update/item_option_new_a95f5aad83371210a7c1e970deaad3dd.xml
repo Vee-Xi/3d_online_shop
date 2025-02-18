@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <attributes/>
         <cat_item display_value="Custom 3D Project - Designer Assistance">37bc939d832f5210a7c1e970deaad3bf</cat_item>
         <category/>
@@ -10,7 +10,7 @@
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
-        <default_value/>
+        <default_value>Please provide your Address details</default_value>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -22,12 +22,12 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>opened_by.location.country</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>true</include_none>
+        <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
@@ -38,18 +38,18 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <mandatory>true</mandatory>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>opened_by_location_country</name>
+        <name>address</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>600</order>
+        <order>300</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Country</question_text>
+        <question_text>Address</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -58,8 +58,8 @@
         <record/>
         <record_producer_table>x_1514542_3d_ninja_3d_nijna_orders</record_producer_table>
         <reference/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>undefined</reference_qual>
+        <reference_qual_condition>undefined</reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -77,20 +77,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-02-05 13:35:30</sys_created_on>
-        <sys_id>e8cc97dd832f5210a7c1e970deaad313</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Country</sys_name>
-        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_created_on>2025-02-18 14:02:45</sys_created_on>
+        <sys_id>a95f5aad83371210a7c1e970deaad3dd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Address</sys_name>
+        <sys_package/>
         <sys_policy/>
         <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
-        <sys_update_name>item_option_new_e8cc97dd832f5210a7c1e970deaad313</sys_update_name>
+        <sys_update_name>item_option_new_a95f5aad83371210a7c1e970deaad3dd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-18 14:01:08</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:08:12</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>6</type>
+        <type>2</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=e8cc97dd832f5210a7c1e970deaad313"/>
-    <fx_price action="delete_multiple" query="id=e8cc97dd832f5210a7c1e970deaad313"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a95f5aad83371210a7c1e970deaad3dd"/>
+    <fx_price action="delete_multiple" query="id=a95f5aad83371210a7c1e970deaad3dd"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>e8cc97dd832f5210a7c1e970deaad313</id>
+        <id>a95f5aad83371210a7c1e970deaad3dd</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-02-05 13:35:30</sys_created_on>
-        <sys_id>e4cc97dd832f5210a7c1e970deaad31b</sys_id>
+        <sys_created_on>2025-02-18 14:02:45</sys_created_on>
+        <sys_id>12afdead83371210a7c1e970deaad3f2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-05 13:35:30</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:02:45</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>e8cc97dd832f5210a7c1e970deaad313</id>
+        <id>a95f5aad83371210a7c1e970deaad3dd</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-02-05 13:35:30</sys_created_on>
-        <sys_id>accc97dd832f5210a7c1e970deaad31a</sys_id>
+        <sys_created_on>2025-02-18 14:02:45</sys_created_on>
+        <sys_id>d2afdead83371210a7c1e970deaad3f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-05 13:35:30</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:02:45</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
