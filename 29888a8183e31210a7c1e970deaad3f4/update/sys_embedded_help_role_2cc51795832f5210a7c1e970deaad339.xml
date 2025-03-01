@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1514542_3d_ninja.3d_ninja_orders_user" name="x_1514542_3d_ninja.3d_ninja_orders_user">a4c597d1832f5210a7c1e970deaad340</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 13:04:55</sys_created_on>
+        <sys_id>2cc51795832f5210a7c1e970deaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a4c597d1832f5210a7c1e970deaad340</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_embedded_help_role_2cc51795832f5210a7c1e970deaad339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 13:04:55</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

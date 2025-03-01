@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 15:15:08</sys_created_on>
+        <sys_id>8c93b39d83af5210a7c1e970deaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1514542_3d_ninja_3d_requests.x_1514542_3d_ninja.3d_requests_user</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_security_acl display_value="x_1514542_3d_ninja_3d_requests">8493b39d83af5210a7c1e970deaad32f</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8c93b39d83af5210a7c1e970deaad332</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 15:15:08</sys_updated_on>
+        <sys_user_role display_value="x_1514542_3d_ninja.3d_requests_user" name="x_1514542_3d_ninja.3d_requests_user">bb83b39983af5210a7c1e970deaad33a</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sys_security_acl_role_8c93b39d83af5210a7c1e970deaad332</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-05 15:15:08</sys_created_on><sys_id>8c93b39d83af5210a7c1e970deaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1514542_3d_ninja_3d_requests.x_1514542_3d_ninja.3d_requests_user</sys_name><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_security_acl display_value="x_1514542_3d_ninja_3d_requests">8493b39d83af5210a7c1e970deaad32f</sys_security_acl><sys_update_name>sys_security_acl_role_8c93b39d83af5210a7c1e970deaad332</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-05 15:15:08</sys_updated_on><sys_user_role display_value="x_1514542_3d_ninja.3d_requests_user" name="x_1514542_3d_ninja.3d_requests_user">bb83b39983af5210a7c1e970deaad33a</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-776943831</payload_hash>
+        <record_name>x_1514542_3d_ninja_3d_requests.x_1514542_3d_ninja.3d_requests_user</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 15:15:08</sys_created_on>
+        <sys_id>cc93b39d83af5210a7c1e970deaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d6ade68f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 15:15:08</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c093b39d33af52108bbf76df3e2d9d35</update_guid>
+        <update_guid_history>c093b39d33af52108bbf76df3e2d9d35:-776943831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1514542_3d_ninja_3d_requests.x_1514542_3d_ninja.3d_requests_user">8a4afba583a31210a7c1e970deaad3b1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-06 10:22:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>379b9aed6bc241ef8d7a762019fbe3e9</sys_id>
+        <sys_metadata>8c93b39d83af5210a7c1e970deaad332</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1514542_3d_ninja_3d_requests.x_1514542_3d_ninja.3d_requests_user</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent display_value="">8493b39d83af5210a7c1e970deaad32f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_8c93b39d83af5210a7c1e970deaad332</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_8c93b39d83af5210a7c1e970deaad332">cc93b39d83af5210a7c1e970deaad335</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-06 10:22:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

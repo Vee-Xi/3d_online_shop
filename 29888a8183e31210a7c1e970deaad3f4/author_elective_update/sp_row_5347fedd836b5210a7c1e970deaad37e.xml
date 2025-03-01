@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="3D Ninja Categories - Container 1">c2f6fedd836b5210a7c1e970deaad3ae</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 10:51:51</sys_created_on>
+        <sys_id>5347fedd836b5210a7c1e970deaad37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sp_row_5347fedd836b5210a7c1e970deaad37e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 10:52:09</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sp_row_5347fedd836b5210a7c1e970deaad37e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="3D Ninja Categories - Container 1">c2f6fedd836b5210a7c1e970deaad3ae</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-05 10:51:51</sys_created_on><sys_id>5347fedd836b5210a7c1e970deaad37e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>1</sys_name><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>sp_row_5347fedd836b5210a7c1e970deaad37e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-05 10:52:09</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>-2051138334</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 10:52:09</sys_created_on>
+        <sys_id>73573a1183ab5210a7c1e970deaad3ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d5bd23080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 10:52:09</sys_updated_on>
+        <type>Row</type>
+        <update_guid>3b573a116cab521026ed1d5dff0e91fe</update_guid>
+        <update_guid_history>3b573a116cab521026ed1d5dff0e91fe:-2051138334,1b47fedd5a6b5210187436f5a987df7f:-1866247452</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">a067769d836b5210a7c1e970deaad3b1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 10:52:13</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>c38ebaa67d5c4e78a76776611a5da001</sys_id>
+        <sys_metadata>5347fedd836b5210a7c1e970deaad37e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sp_row_5347fedd836b5210a7c1e970deaad37e</sys_update_name>
+        <sys_update_version display_value="sp_row_5347fedd836b5210a7c1e970deaad37e">73573a1183ab5210a7c1e970deaad3ff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 10:52:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

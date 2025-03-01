@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">4f077e9383e31210a7c1e970deaad359</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1ijqs695tkpfc2s93bqg","filterName":"Search by Item","filterComponentType":"singleselect","defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"83077e9383e31210a7c1e970deaad33e","isDashboard":true,"id":"filterComponentType","value":"singleselect","noDebounce":true,"propLabel":"Filter type"}</component_props>
+        <h>17</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 16:08:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da397e1783e31210a7c1e970deaad3fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>par_dashboard_widget_da397e1783e31210a7c1e970deaad3fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 16:08:21</sys_updated_on>
+        <visualization/>
+        <w>25</w>
+        <widget_props/>
+        <x>23</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>par_dashboard_widget_da397e1783e31210a7c1e970deaad3fd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">4f077e9383e31210a7c1e970deaad359</canvas><component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component><component_props>{"filterId":"1ijqs695tkpfc2s93bqg","filterName":"Search by Item","filterComponentType":"singleselect","defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"83077e9383e31210a7c1e970deaad33e","isDashboard":true,"id":"filterComponentType","value":"singleselect","noDebounce":true,"propLabel":"Filter type"}</component_props><h>17</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-11 16:08:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>da397e1783e31210a7c1e970deaad3fd</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>par_dashboard_widget_da397e1783e31210a7c1e970deaad3fd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-11 16:08:21</sys_updated_on><visualization/><w>25</w><widget_props/><x>23</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>301999685</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 16:08:21</sys_created_on>
+        <sys_id>f949be5783e31210a7c1e970deaad320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f5c4c5e10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 16:08:21</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>b149be574ce312103feda762abbb1720</update_guid>
+        <update_guid_history>b149be574ce312103feda762abbb1720:301999685,5e397e57f7e31210863663200843e558:-649018468</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">79d97a9783e31210a7c1e970deaad3b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 16:10:49</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>bc9856a0b0c8472095282d0615d5c590</sys_id>
+        <sys_metadata>da397e1783e31210a7c1e970deaad3fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_da397e1783e31210a7c1e970deaad3fd</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_da397e1783e31210a7c1e970deaad3fd">f949be5783e31210a7c1e970deaad320</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 16:10:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

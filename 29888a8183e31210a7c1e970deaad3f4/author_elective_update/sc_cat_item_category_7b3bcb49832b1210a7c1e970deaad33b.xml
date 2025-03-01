@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Cyber Cat: Universal Headphone Holder">9f2b8b49832b1210a7c1e970deaad3b8</sc_cat_item>
+        <sc_category display_value="3D Models for your Office">e86dbe4583e71210a7c1e970deaad3a5</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 17:40:31</sys_created_on>
+        <sys_id>7b3bcb49832b1210a7c1e970deaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3D Models for your Office.Cyber Cat: Universal Headphone Holder</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sc_cat_item_category_7b3bcb49832b1210a7c1e970deaad33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 17:40:31</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sc_cat_item_category_7b3bcb49832b1210a7c1e970deaad33b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Cyber Cat: Universal Headphone Holder">9f2b8b49832b1210a7c1e970deaad3b8</sc_cat_item><sc_category display_value="3D Models for your Office">e86dbe4583e71210a7c1e970deaad3a5</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 17:40:31</sys_created_on><sys_id>7b3bcb49832b1210a7c1e970deaad33b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3D Models for your Office.Cyber Cat: Universal Headphone Holder</sys_name><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>sc_cat_item_category_7b3bcb49832b1210a7c1e970deaad33b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 17:40:31</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1773935432</payload_hash>
+        <record_name>3D Models for your Office.Cyber Cat: Universal Headphone Holder</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 17:40:31</sys_created_on>
+        <sys_id>b73b4b89832b1210a7c1e970deaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d20ca3ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 17:40:31</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>bb3b4b894c2b1210bde7ff1dddcb887a</update_guid>
+        <update_guid_history>bb3b4b894c2b1210bde7ff1dddcb887a:-1773935432</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3D Models for your Office.Cyber Cat: Universal Headphone Holder">000c8bc9832b1210a7c1e970deaad325</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 17:43:49</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>38d82b8c48a441c4b0336119bf6d5a44</sys_id>
+        <sys_metadata>7b3bcb49832b1210a7c1e970deaad33b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3D Models for your Office.Cyber Cat: Universal Headphone Holder</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_7b3bcb49832b1210a7c1e970deaad33b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_7b3bcb49832b1210a7c1e970deaad33b">b73b4b89832b1210a7c1e970deaad37b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 17:43:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

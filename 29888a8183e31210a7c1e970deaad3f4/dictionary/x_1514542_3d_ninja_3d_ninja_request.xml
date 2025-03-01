@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="047d204b83271210a7c1e970deaad35d" label="3D Ninja Request" max_length="40" name="x_1514542_3d_ninja_3d_ninja_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional Notes" max_length="4000" name="u_additional_notes" type="journal"/>
+        <element attributes="encode_utf8=false" label="Assignee" max_length="32" name="assignee" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="encode_utf8=false" label="Item" max_length="32" name="item" read_only="true" reference="sc_cat_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="1000" name="comments" type="string"/>
+        <element attributes="omit_sys_original=true" label="Price" max_length="20" name="price" read_only="true" type="currency"/>
+        <element attributes="is_multi_text=true,preview_first=true,preview_selector=true" label="New Wiki" max_length="65536" name="u_wiki_text_1" type="wiki_text"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="100" name="short_description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="40" name="notes" type="journal_input"/>
+        <element attributes="encode_utf8=false" label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested Item" max_length="32" name="requested_item" reference="sc_req_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <index name="index">
+            <element name="assignee"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="item"/>
+        </index>
+        <index name="index4">
+            <element name="requested_for"/>
+        </index>
+        <index name="index5">
+            <element name="requested_item"/>
+        </index>
+    </element>
+</database>

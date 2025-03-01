@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="3D Print Order?">bb8c57cc83042210a7c1e970deaad38b</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 12:53:38</sys_created_on>
+        <sys_id>3f8c9bcc83042210a7c1e970deaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3D Model</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>question_choice_3f8c9bcc83042210a7c1e970deaad322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 12:53:38</sys_updated_on>
+        <text>3D Model</text>
+        <value>3_d_model_project</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=3f8c9bcc83042210a7c1e970deaad322"/>
+</record_update>

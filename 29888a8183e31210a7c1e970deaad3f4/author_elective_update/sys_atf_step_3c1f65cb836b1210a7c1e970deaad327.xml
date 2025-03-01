@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Create and impersonate user with the following values:
+First name = Ninja
+and Last name = X
+With roles: itil, admin
+With groups: Ninja Support</description>
+        <display_name>Create a User</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <step_config display_value="Create a User">d9bc5f21ff6033008d3f5d9ad53bf12d</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>3c1f65cb836b1210a7c1e970deaad327</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Create a User</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_atf_step_3c1f65cb836b1210a7c1e970deaad327</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:26:37</sys_updated_on>
+        <table>sys_user</table>
+        <test display_value="3D Ninja Test - Record Producer">22edad8b836b1210a7c1e970deaad34f</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=3c1f65cb836b1210a7c1e970deaad327"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>093f6dcb836b1210a7c1e970deaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:06:14</sys_updated_on>
+        <value>Ninja</value>
+        <variable display_value="First name">1985e0ceff2433008d3f5d9ad53bf1ba</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>0d3f6dcb836b1210a7c1e970deaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:06:14</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Impersonate this user">98c44875ffa033008d3f5d9ad53bf1fa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>453f6dcb836b1210a7c1e970deaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:06:14</sys_updated_on>
+        <value>a1eef94983a31210a7c1e970deaad3b5</value>
+        <variable display_value="Groups">b27b2b29ff6033008d3f5d9ad53bf164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>813f6dcb836b1210a7c1e970deaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:06:14</sys_updated_on>
+        <value>X</value>
+        <variable display_value="Last name">6f69fc4aff6433008d3f5d9ad53bf18c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>8d3f6dcb836b1210a7c1e970deaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:06:14</sys_updated_on>
+        <value/>
+        <variable display_value="User field values">1778a7480f20101091d0f00c97767e03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>c93f6dcb836b1210a7c1e970deaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:06:14</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">ff06ab840f20101091d0f00c97767e6d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3c1f65cb836b1210a7c1e970deaad327</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:06:14</sys_created_on>
+        <sys_id>cd3f6dcb836b1210a7c1e970deaad327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:19:34</sys_updated_on>
+        <value>282bf1fac6112285017366cb5f867469,2831a114c611228501d4ea6c309d626d</value>
+        <variable display_value="Roles">8c07aba5ff6033008d3f5d9ad53bf13b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_d9bc5f21ff6033008d3f5d9ad53bf12d^id=3c1f65cb836b1210a7c1e970deaad327"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sys_atf_step_3c1f65cb836b1210a7c1e970deaad327</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Create and impersonate user with the following values:
+First name = Ninja
+and Last name = X
+With roles: itil, admin
+With groups: Ninja Support</description><display_name>Create a User</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><step_config display_value="Create a User">d9bc5f21ff6033008d3f5d9ad53bf12d</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>3c1f65cb836b1210a7c1e970deaad327</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Create a User</sys_name><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>sys_atf_step_3c1f65cb836b1210a7c1e970deaad327</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:26:37</sys_updated_on><table>sys_user</table><test display_value="3D Ninja Test - Record Producer">22edad8b836b1210a7c1e970deaad34f</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=3c1f65cb836b1210a7c1e970deaad327"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>093f6dcb836b1210a7c1e970deaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:06:14</sys_updated_on><value>Ninja</value><variable display_value="First name">1985e0ceff2433008d3f5d9ad53bf1ba</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>0d3f6dcb836b1210a7c1e970deaad327</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:06:14</sys_updated_on><value>1</value><variable display_value="Impersonate this user">98c44875ffa033008d3f5d9ad53bf1fa</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>453f6dcb836b1210a7c1e970deaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:06:14</sys_updated_on><value>a1eef94983a31210a7c1e970deaad3b5</value><variable display_value="Groups">b27b2b29ff6033008d3f5d9ad53bf164</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>813f6dcb836b1210a7c1e970deaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:06:14</sys_updated_on><value>X</value><variable display_value="Last name">6f69fc4aff6433008d3f5d9ad53bf18c</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>8d3f6dcb836b1210a7c1e970deaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:06:14</sys_updated_on><value/><variable display_value="User field values">1778a7480f20101091d0f00c97767e03</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>c93f6dcb836b1210a7c1e970deaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:06:14</sys_updated_on><value>sys_user</value><variable display_value="Table">ff06ab840f20101091d0f00c97767e6d</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3c1f65cb836b1210a7c1e970deaad327</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 16:06:14</sys_created_on><sys_id>cd3f6dcb836b1210a7c1e970deaad327</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 16:19:34</sys_updated_on><value>282bf1fac6112285017366cb5f867469,2831a114c611228501d4ea6c309d626d</value><variable display_value="Roles">8c07aba5ff6033008d3f5d9ad53bf13b</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_d9bc5f21ff6033008d3f5d9ad53bf12d^id=3c1f65cb836b1210a7c1e970deaad327"/></record_update>]]></payload>
+        <payload_hash>-1443798490</payload_hash>
+        <record_name>Create a User</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:26:37</sys_created_on>
+        <sys_id>77d3b9c383ab1210a7c1e970deaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f0af230a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:26:37</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>3fd3b9c389ab121078cf0968eb8dd96d</update_guid>
+        <update_guid_history>3fd3b9c389ab121078cf0968eb8dd96d:-1443798490,a042bd03a9ab1210a9c620c39a427dac:-1524702171,f821b1cf1e6b1210a04e51b4666cd5b5:1492516649,b01171cf9b6b12105cee5619e2c82f79:-150015257,093f6dcbf46b12101119e3497e2a0e2a:1176202438</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:26:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>01dc4ff564e442428009029423424804</sys_id>
+        <sys_metadata>3c1f65cb836b1210a7c1e970deaad327</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create a User</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sys_atf_step_3c1f65cb836b1210a7c1e970deaad327</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_3c1f65cb836b1210a7c1e970deaad327">77d3b9c383ab1210a7c1e970deaad36e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:26:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

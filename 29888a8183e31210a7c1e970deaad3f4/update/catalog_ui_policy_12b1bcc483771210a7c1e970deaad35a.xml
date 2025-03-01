@@ -6,7 +6,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <catalog_conditions/>
+        <catalog_conditions>IO:7defb42883842210a7c1e970deaad3c3=true^EQ</catalog_conditions>
         <catalog_item display_value="Cyber Cat: Universal Headphone Holder">9f2b8b49832b1210a7c1e970deaad3b8</catalog_item>
         <conditions/>
         <description/>
@@ -52,22 +52,22 @@ function onChange(control, oldValue, newValue, isLoading) {
 
 }]]></script_true>
         <set_values/>
-        <short_description>Pricing change based on choice</short_description>
+        <short_description>Cyber Cat - print model</short_description>
         <sys_class_name>catalog_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-13 14:11:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>12b1bcc483771210a7c1e970deaad35a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Pricing change based on choice</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Cyber Cat - print model</sys_name>
         <sys_overrides/>
         <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
         <sys_policy/>
         <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
         <sys_update_name>catalog_ui_policy_12b1bcc483771210a7c1e970deaad35a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-13 14:17:01</sys_updated_on>
+        <sys_updated_on>2025-02-27 14:47:22</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <va_supported>true</va_supported>

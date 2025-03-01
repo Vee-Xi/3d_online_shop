@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>catalog_3d_ninja_catalog</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 16:32:48</sys_created_on>
+        <sys_id>f7bbfe4583e71210a7c1e970deaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3D Ninja Catalog View</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_ui_view_f7bbfe4583e71210a7c1e970deaad339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 16:32:48</sys_updated_on>
+        <title>3D Ninja Catalog View</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

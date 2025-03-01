@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New 3D Nijna Orders</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>3D Nijna Orders</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">f1d4f158190312104f3423cebaaa852a</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 12:51:50</sys_created_on>
+        <sys_id>432982c583e31210a7c1e970deaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3D Nijna Orders</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_wizard_answer_432982c583e31210a7c1e970deaad3a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 12:51:50</sys_updated_on>
+        <table/>
+        <target_url>x_1514542_3d_ninja_3d_nijna_orders.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

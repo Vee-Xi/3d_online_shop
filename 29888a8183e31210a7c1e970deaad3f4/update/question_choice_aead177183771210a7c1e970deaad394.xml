@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
         <inactive>false</inactive>
-        <misc>0</misc>
         <order>200</order>
         <published_ref/>
-        <question display_value="Do you want to order 3D Model or 3D printed Item?">0eadd37183771210a7c1e970deaad37e</question>
-        <rec_misc>0</rec_misc>
+        <question display_value="3D Print Order?">0eadd37183771210a7c1e970deaad37e</question>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-19 13:12:08</sys_created_on>

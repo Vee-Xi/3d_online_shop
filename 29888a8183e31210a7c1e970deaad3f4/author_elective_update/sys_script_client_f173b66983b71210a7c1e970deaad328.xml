@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Autopopulate email</name>
+        <order/>
+        <script><![CDATA[function onChange() {
+  // Get the opened_by field value
+  var openedBy = g_form.getValue('opened_by');
+
+  // Check if opened_by is populated
+  if (openedBy) {
+    // Get the email address using GlideRecord
+    var grUser = new GlideRecord('sys_user');
+    grUser.addQuery('sys_id', openedBy);
+    grUser.query();
+    if (grUser.next()) {
+      g_form.setValue('opened_by_email', grUser.email);
+    } else {
+      // Handle cases where opened_by is not a valid user
+      g_form.showErrorBox('opened_by_email', 'Error: Could not retrieve email for opened_by user. Please select a valid user.');
+    }
+  }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-18 15:32:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f173b66983b71210a7c1e970deaad328</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Autopopulate email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_script_client_f173b66983b71210a7c1e970deaad328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-18 15:39:05</sys_updated_on>
+        <table>x_1514542_3d_ninja_3d_nijna_orders</table>
+        <type>onChange</type>
+        <ui_type>1</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sys_script_client_f173b66983b71210a7c1e970deaad328</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Autopopulate email&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange() {
+  // Get the opened_by field value
+  var openedBy = g_form.getValue('opened_by');
+
+  // Check if opened_by is populated
+  if (openedBy) {
+    // Get the email address using GlideRecord
+    var grUser = new GlideRecord('sys_user');
+    grUser.addQuery('sys_id', openedBy);
+    grUser.query();
+    if (grUser.next()) {
+      g_form.setValue('opened_by_email', grUser.email);
+    } else {
+      // Handle cases where opened_by is not a valid user
+      g_form.showErrorBox('opened_by_email', 'Error: Could not retrieve email for opened_by user. Please select a valid user.');
+    }
+  }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-18 15:32:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f173b66983b71210a7c1e970deaad328&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Autopopulate email&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja"&gt;29888a8183e31210a7c1e970deaad3f4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="3D Ninja Shop"&gt;29888a8183e31210a7c1e970deaad3f4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f173b66983b71210a7c1e970deaad328&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-18 15:39:05&lt;/sys_updated_on&gt;&lt;table&gt;x_1514542_3d_ninja_3d_nijna_orders&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;1&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-659400105</payload_hash>
+        <record_name>Autopopulate email</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-18 15:39:05</sys_created_on>
+        <sys_id>6db5fee983b71210a7c1e970deaad326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19519b67f940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-18 15:39:05</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>25b5fee9cfb71210810104eb4f4c1326</update_guid>
+        <update_guid_history>25b5fee9cfb71210810104eb4f4c1326:-659400105,8985faa98cb7121003ba1cf2b6b6b74f:458869686,8d84b2a95db71210277982fceb0fb491:896976810,944476a9d4b712109917118a47ebf706:2083131562,b11472a9f3b71210aff89c0c8c6a7e48:361649310</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 09:38:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>08a06cc2e21f4f18808443e96d67a664</sys_id>
+        <sys_metadata>f173b66983b71210a7c1e970deaad328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autopopulate email</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent display_value="3D Nijna Orders">0b2982c583e31210a7c1e970deaad329</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sys_script_client_f173b66983b71210a7c1e970deaad328</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f173b66983b71210a7c1e970deaad328">6db5fee983b71210a7c1e970deaad326</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 09:38:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

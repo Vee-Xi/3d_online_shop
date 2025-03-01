@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Support Team" section_id="e1db0a8983e31210a7c1e970deaad328" sys_domain="global" table="x_1514542_3d_ninja_3d_nijna_orders" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 13:03:29</sys_created_on>
+            <sys_id>21db0a8983e31210a7c1e970deaad387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Support Team" display_value="Support Team" name="x_1514542_3d_ninja_3d_nijna_orders" sys_domain="global" view="Default view">e1db0a8983e31210a7c1e970deaad328</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 13:03:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 13:03:29</sys_created_on>
+            <sys_id>29db0a8983e31210a7c1e970deaad387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Support Team" display_value="Support Team" name="x_1514542_3d_ninja_3d_nijna_orders" sys_domain="global" view="Default view">e1db0a8983e31210a7c1e970deaad328</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 13:03:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 13:03:29</sys_created_on>
+            <sys_id>21db0a8983e31210a7c1e970deaad388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Support Team" display_value="Support Team" name="x_1514542_3d_ninja_3d_nijna_orders" sys_domain="global" view="Default view">e1db0a8983e31210a7c1e970deaad328</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 13:03:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Support Team</caption>
+            <header>false</header>
+            <name>x_1514542_3d_ninja_3d_nijna_orders</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 13:03:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1db0a8983e31210a7c1e970deaad328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1514542_3d_ninja_3d_nijna_orders</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+            <sys_update_name>sys_ui_section_e1db0a8983e31210a7c1e970deaad328</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 13:03:28</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sys_ui_section_e1db0a8983e31210a7c1e970deaad328</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Support Team" section_id="e1db0a8983e31210a7c1e970deaad328" sys_domain="global" table="x_1514542_3d_ninja_3d_nijna_orders" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 13:03:29</sys_created_on><sys_id>21db0a8983e31210a7c1e970deaad387</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Support Team" display_value="Support Team" name="x_1514542_3d_ninja_3d_nijna_orders" sys_domain="global" view="Default view">e1db0a8983e31210a7c1e970deaad328</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 13:03:29</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 13:03:29</sys_created_on><sys_id>29db0a8983e31210a7c1e970deaad387</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Support Team" display_value="Support Team" name="x_1514542_3d_ninja_3d_nijna_orders" sys_domain="global" view="Default view">e1db0a8983e31210a7c1e970deaad328</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 13:03:29</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 13:03:29</sys_created_on><sys_id>21db0a8983e31210a7c1e970deaad388</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Support Team" display_value="Support Team" name="x_1514542_3d_ninja_3d_nijna_orders" sys_domain="global" view="Default view">e1db0a8983e31210a7c1e970deaad328</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 13:03:29</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Support Team</caption><header>false</header><name>x_1514542_3d_ninja_3d_nijna_orders</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 13:03:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e1db0a8983e31210a7c1e970deaad328</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1514542_3d_ninja_3d_nijna_orders</sys_name><sys_overrides/><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>sys_ui_section_e1db0a8983e31210a7c1e970deaad328</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 13:03:28</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1667510701</payload_hash>
+        <record_name>3D Nijna Orders</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 13:03:29</sys_created_on>
+        <sys_id>b1db0a8983e31210a7c1e970deaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d10f01830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 13:03:29</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>39db0a8982e312109f3e015d8c99b789</update_guid>
+        <update_guid_history>39db0a8982e312109f3e015d8c99b789:1667510701</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 13:06:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>338f76d3b9e8408c8bc52c8c5bebe5d9</sys_id>
+        <sys_metadata>e1db0a8983e31210a7c1e970deaad328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Support Team</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent display_value="3D Nijna Orders">0b2982c583e31210a7c1e970deaad329</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sys_ui_section_e1db0a8983e31210a7c1e970deaad328</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_e1db0a8983e31210a7c1e970deaad328">b1db0a8983e31210a7c1e970deaad38a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 13:06:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

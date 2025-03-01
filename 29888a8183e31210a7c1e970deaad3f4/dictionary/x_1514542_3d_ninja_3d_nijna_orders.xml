@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0b2982c583e31210a7c1e970deaad329" extends="task" label="3D Nijna Orders" max_length="40" name="x_1514542_3d_ninja_3d_nijna_orders" type="collection">
+        <element label="New Audio" max_length="40" name="u_audio_5" type="audio"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="google" label="How did you find us?" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="TV spot" sequence="2" value="tv spot"/>
+                <element inactive="true" inactive_on_update="true" label="Friend recommendation" sequence="1" value="friend recommendation"/>
+                <element inactive="true" inactive_on_update="true" label="Tiktok" sequence="3" value="tiktok"/>
+                <element inactive="true" inactive_on_update="true" label="Google" sequence="0" value="google"/>
+                <element inactive="true" inactive_on_update="true" label="Own Search" sequence="4" value="own search"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Price" max_length="20" name="price" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Notes" max_length="4000" name="u_journal_1" type="journal"/>
+        <element label="New File Attachment" max_length="40" name="u_file_attachment_4" type="file_attachment"/>
+    </element>
+</database>

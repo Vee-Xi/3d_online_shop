@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="3D Ninja Shop">2449068583e31210a7c1e970deaad374</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>3D Ninja Orders</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1514542_3d_ninja_3d_ninja_orders</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1514542_3d_ninja.3d_ninja_orders_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 13:04:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4c51795832f5210a7c1e970deaad340</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>3D Ninja Tickets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_app_module_e4c51795832f5210a7c1e970deaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 13:10:13</sys_updated_on>
+        <timeline_page/>
+        <title>3D Ninja Tickets</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>sys_app_module_e4c51795832f5210a7c1e970deaad340</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="3D Ninja Shop">2449068583e31210a7c1e970deaad374</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>3D Ninja Orders</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1514542_3d_ninja_3d_ninja_orders</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1514542_3d_ninja.3d_ninja_orders_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-05 13:04:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e4c51795832f5210a7c1e970deaad340</sys_id><sys_mod_count>1</sys_mod_count><sys_name>3D Ninja Tickets</sys_name><sys_overrides/><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>sys_app_module_e4c51795832f5210a7c1e970deaad340</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-05 13:10:13</sys_updated_on><timeline_page/><title>3D Ninja Tickets</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1399589386</payload_hash>
+        <record_name>3D Ninja Tickets</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 13:10:13</sys_created_on>
+        <sys_id>56f6dfd5832f5210a7c1e970deaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d63b89a60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 13:10:13</sys_updated_on>
+        <type>Module</type>
+        <update_guid>1ef6dfd5492f5210c04d8b283189317a</update_guid>
+        <update_guid_history>1ef6dfd5492f5210c04d8b283189317a:-1399589386,e4c51795f42f5210d4dffa4fd35e2a42:770474816</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3D Ninja Tickets">46a7df19832f5210a7c1e970deaad331</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-05 13:13:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>1c444a184f7a4958a5d46ffbf3aac4c4</sys_id>
+        <sys_metadata>e4c51795832f5210a7c1e970deaad340</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3D Ninja Tickets</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>sys_app_module_e4c51795832f5210a7c1e970deaad340</sys_update_name>
+        <sys_update_version display_value="sys_app_module_e4c51795832f5210a7c1e970deaad340">56f6dfd5832f5210a7c1e970deaad37b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 13:13:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

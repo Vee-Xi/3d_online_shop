@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Cyber Cat: Universal Headphone Holder">9f2b8b49832b1210a7c1e970deaad3b8</catalog_item>
+        <catalog_variable>IO:041f6baf83671210a7c1e970deaad304</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-13 13:15:16</sys_created_on>
+        <sys_id>dbc420c483371210a7c1e970deaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>shipping_address</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_dbc420c483371210a7c1e970deaad3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-13 13:15:16</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide variables when visitor chooses just 3d model">dba3ac4483371210a7c1e970deaad344</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>shipping_address</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=dbc420c483371210a7c1e970deaad3cf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>catalog_ui_policy_action_dbc420c483371210a7c1e970deaad3cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Cyber Cat: Universal Headphone Holder">9f2b8b49832b1210a7c1e970deaad3b8</catalog_item><catalog_variable>IO:041f6baf83671210a7c1e970deaad304</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-13 13:15:16</sys_created_on><sys_id>dbc420c483371210a7c1e970deaad3cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>shipping_address</sys_name><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>catalog_ui_policy_action_dbc420c483371210a7c1e970deaad3cf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-13 13:15:16</sys_updated_on><table/><ui_policy display_value="Hide variables when visitor chooses just 3d model">dba3ac4483371210a7c1e970deaad344</ui_policy><value/><value_action>ignore</value_action><variable>shipping_address</variable><variable_set/><visible>false</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=dbc420c483371210a7c1e970deaad3cf"/></record_update>]]></payload>
+        <payload_hash>-931453650</payload_hash>
+        <record_name>shipping_address</record_name>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-13 13:15:16</sys_created_on>
+        <sys_id>c2d4a4c483371210a7c1e970deaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ff730a2e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-13 13:15:16</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>c6d4a4c4dd37121091fc01b1ed9b8d4b</update_guid>
+        <update_guid_history>c6d4a4c4dd37121091fc01b1ed9b8d4b:-931453650</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="shipping_address">85a0096883842210a7c1e970deaad3ec</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 14:49:22</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>153cd6c7af4e4ac0a48ee5d8517c9000</sys_id>
+        <sys_metadata>dbc420c483371210a7c1e970deaad3cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>shipping_address</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_dbc420c483371210a7c1e970deaad3cf</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_dbc420c483371210a7c1e970deaad3cf">c2d4a4c483371210a7c1e970deaad34c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 14:49:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

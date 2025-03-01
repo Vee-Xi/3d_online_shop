@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Pillow Stand">49ddb64983e71210a7c1e970deaad329</catalog_item>
+        <catalog_variable>IO:ecd4b0e483442210a7c1e970deaad3d4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 14:34:13</sys_created_on>
+        <sys_id>dd2db4e083842210a7c1e970deaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>shipping_address</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_dd2db4e083842210a7c1e970deaad3fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 14:34:13</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Pillow Stand - model print">0becf4e083842210a7c1e970deaad333</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>shipping_address</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=dd2db4e083842210a7c1e970deaad3fd"/>
+</record_update>

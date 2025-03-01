@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition_rel_set">
+    <catalog_dl_definition_rel_set action="DELETE">
+        <always_replace>true</always_replace>
+        <applies_to>item</applies_to>
+        <catalog_item display_value="Pillow Stand">49ddb64983e71210a7c1e970deaad329</catalog_item>
+        <dl_definition display_value="Price change">7b5533fd83b71210a7c1e970deaad30e</dl_definition>
+        <matcher_table>x_1514542_3d_ninja_3d_ninja_request</matcher_table>
+        <matcher_table_field>price</matcher_table_field>
+        <source_catalog_variable>IO:0eadd37183771210a7c1e970deaad37e</source_catalog_variable>
+        <source_table/>
+        <source_table_field/>
+        <source_variable>do_you_want_to_order_3d_model_or_3d_prin</source_variable>
+        <sys_class_name>catalog_dl_definition_rel_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 14:57:57</sys_created_on>
+        <sys_id>85d5bbfd83b71210a7c1e970deaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>catalog_dl_definition_rel_set_85d5bbfd83b71210a7c1e970deaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 14:57:57</sys_updated_on>
+        <variable_set/>
+    </catalog_dl_definition_rel_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</application>
+        <file_path/>
+        <instance_id>6953a17a1bc68610c82acb7b234bcb00</instance_id>
+        <instance_name>dev268658</instance_name>
+        <name>catalog_dl_definition_rel_set_85d5bbfd83b71210a7c1e970deaad3cd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition_rel_set"><catalog_dl_definition_rel_set action="INSERT_OR_UPDATE"><always_replace>true</always_replace><applies_to>item</applies_to><catalog_item display_value="Pillow Stand">49ddb64983e71210a7c1e970deaad329</catalog_item><dl_definition display_value="Price change">7b5533fd83b71210a7c1e970deaad30e</dl_definition><matcher_table>x_1514542_3d_ninja_3d_ninja_request</matcher_table><matcher_table_field>price</matcher_table_field><source_catalog_variable>IO:0eadd37183771210a7c1e970deaad37e</source_catalog_variable><source_table/><source_table_field/><source_variable>do_you_want_to_order_3d_model_or_3d_prin</source_variable><sys_class_name>catalog_dl_definition_rel_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-19 14:57:57</sys_created_on><sys_id>85d5bbfd83b71210a7c1e970deaad3cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package><sys_policy/><sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope><sys_update_name>catalog_dl_definition_rel_set_85d5bbfd83b71210a7c1e970deaad3cd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-19 14:57:57</sys_updated_on><variable_set/></catalog_dl_definition_rel_set></record_update>]]></payload>
+        <payload_hash>-429830042</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>6988468583e31210a7c1e970deaad3cc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 14:57:57</sys_created_on>
+        <sys_id>e8e5fbfd83b71210a7c1e970deaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1951eb7323b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 14:57:57</sys_updated_on>
+        <type>Catalog Setter Variable Definitions</type>
+        <update_guid>ece5fbfd33b71210d80e48431a9813f0</update_guid>
+        <update_guid_history>ece5fbfd33b71210d80e48431a9813f0:-429830042</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c0f537fd83b71210a7c1e970deaad380</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 14:58:11</sys_created_on>
+        <sys_db_object display_value="" name="catalog_dl_definition_rel_set">catalog_dl_definition_rel_set</sys_db_object>
+        <sys_id>08b7123ea1de48068c7be57a81fbc044</sys_id>
+        <sys_metadata>85d5bbfd83b71210a7c1e970deaad3cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_scope_delete display_value="">49dd046fe5a04132bc30e9c6a76ea369</sys_scope_delete>
+        <sys_update_name>catalog_dl_definition_rel_set_85d5bbfd83b71210a7c1e970deaad3cd</sys_update_name>
+        <sys_update_version display_value="catalog_dl_definition_rel_set_85d5bbfd83b71210a7c1e970deaad3cd">e8e5fbfd83b71210a7c1e970deaad3f1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 14:58:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

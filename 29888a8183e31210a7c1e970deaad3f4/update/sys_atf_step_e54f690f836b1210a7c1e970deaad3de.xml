@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Open the record '{{invalid step_id=b7ceadcb836b1210a7c1e970deaad331.}}' in the 'Audit Records' related list on the '3D Ninja Request' form</description>
+        <display_name>Open a Record in List</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>5</order>
+        <step_config display_value="Open a Record in List">0200ac2fe72003005c85cd19d2f6a942</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>e54f690f836b1210a7c1e970deaad3de</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Open a Record in List</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_atf_step_e54f690f836b1210a7c1e970deaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:26:50</sys_updated_on>
+        <table>x_1514542_3d_ninja_3d_ninja_request</table>
+        <test display_value="3D Ninja Test - Record Producer">22edad8b836b1210a7c1e970deaad34f</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=e54f690f836b1210a7c1e970deaad3de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e54f690f836b1210a7c1e970deaad3de</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>1a8f214f836b1210a7c1e970deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:07:40</sys_updated_on>
+        <value>REL:702782ce0a0a0b1b007514c6daa62dd5</value>
+        <variable display_value="Related list">5121646fe72003005c85cd19d2f6a99a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e54f690f836b1210a7c1e970deaad3de</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>568f214f836b1210a7c1e970deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:07:40</sys_updated_on>
+        <value>related_list</value>
+        <variable display_value="List type">b8c89a36538333009e02ddeeff7b12f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e54f690f836b1210a7c1e970deaad3de</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>928f214f836b1210a7c1e970deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:07:40</sys_updated_on>
+        <value/>
+        <variable display_value="Record">b076e295531233009e02ddeeff7b12d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e54f690f836b1210a7c1e970deaad3de</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>9e8f214f836b1210a7c1e970deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:07:40</sys_updated_on>
+        <value>sys_audit</value>
+        <variable display_value="Related list table">c181286fe72003005c85cd19d2f6a93b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>e54f690f836b1210a7c1e970deaad3de</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>da8f214f836b1210a7c1e970deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:07:40</sys_updated_on>
+        <value>x_1514542_3d_ninja_3d_ninja_request</value>
+        <variable display_value="Table">6fb0a06fe72003005c85cd19d2f6a9da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e54f690f836b1210a7c1e970deaad3de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record_id</field>
+        <id>e54f690f836b1210a7c1e970deaad3de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 16:07:40</sys_created_on>
+        <sys_id>128f214f836b1210a7c1e970deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 16:07:40</sys_updated_on>
+        <table>var__m_atf_input_variable_0200ac2fe72003005c85cd19d2f6a942</table>
+        <value>{{step['b7ceadcb836b1210a7c1e970deaad331'].record_id}}</value>
+    </sys_element_mapping>
+</record_update>
