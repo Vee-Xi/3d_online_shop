@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>.form-control[readonly]{&#13;
+background-color: #E0E0E0;&#13;
+}&#13;
+  </css>
+        <name>read only variables</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:41:32</sys_created_on>
+        <sys_id>428b10ed83402210a7c1e970deaad374</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>read only variables</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sp_css_428b10ed83402210a7c1e970deaad374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 15:05:23</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_css>
+</record_update>

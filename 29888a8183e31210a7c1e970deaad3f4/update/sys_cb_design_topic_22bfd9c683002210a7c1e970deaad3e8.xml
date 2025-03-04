@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__7891a0eb8c174ffe9ff3df5bfdbeacd3">6ebfd9c683002210a7c1e970deaad3e4</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"376e5778078544a391f87190a9b5f855","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"376e5778078544a391f87190a9b5f855"}],"goals":[{"name":"primary","trigger_id":"376e5778078544a391f87190a9b5f855","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"97e4950fefcd4d1bb7992c8bded64d3a","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"9ddbed90de5d4cdb8bc7b2dcd938f043","name":"End","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:25f6b2fa874e435a82c505fb1b1af129:field:0 {0}\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"}],"request_feedback":true,"id":"25f6b2fa874e435a82c505fb1b1af129","name":"Virtual Ninja Greeting","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"fa38b65be8714eb2adc97347c2a1b32b","name":"Assistance Topics","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"8289324df0fc442ab2e2e2ddaf52399a","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Topics I can help your with please find below!\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Button choice","branches":[{"type":"Branch","label":"3d project licence","expression":{"type":"Applicability","mode":"query","value":"assistance_topics=3D model project license"},"id":"c69f6f63b55f40efa0f0bbe2cfa15359","name":"3d project licence","expert_mode":false},{"type":"Branch","label":"Create ticket for designers","expression":{"type":"Applicability","mode":"query","value":"assistance_topics=3D Designer Team Help"},"id":"b9435830c18841718ce86969cbf73e85","name":"Create ticket for designers","expert_mode":false},{"type":"Branch","label":"Ready print 3d model (ticket update)","expression":{"type":"Applicability","mode":"query","value":"assistance_topics=3D print ticket update"},"id":"4c09073b6f0349499e60b2b3b5a9c99d","name":"Ready print 3d model (ticket update)","expert_mode":false}],"id":"320b6a3593f0453ba702eae89dfdfddc","goal_id":"primary","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"6d53948bc1a54ae190d9a526d19a9d55","name":"ImplicitEnd__5013084b78294a15aa97bba22939b0d7","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"20a025e13e5843f5a80420bb0bc43f58","name":"ImplicitEnd__4b995ab91727466bbfe520097f3934b2","expert_mode":false},{"type":"CRUDAction","mode":"create","query":"opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.user_input}}","variable_id":"95170fdd5e54435ebbd757f8f5b33706","id":"7664792c386748aab3d937bd7a9562d7","name":"designers ticket","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"data_pill","value":"{{vaInputs.attachment_input}}"}]},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Here is the link for your ticket {0}:\", vaContext.getRequesterLang(), [vaInputs.designers_ticket.number.getDisplayValue()])"},"label":{"type":"String","mode":"string","value":"{{vaInputs.designers_ticket.short_description}}"},"url":{"type":"String","mode":"string","value":"{{vaInputs.designers_ticket.number}}"},"link_type":"single","multi_link_script":"","id":"14b38bc46a6c4560be4158ae0b95bcc0","name":"ticket number","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"This choice is to create a ticket to 3D Designers Team\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"6108e86cb2a74dc295bdf6f4295ac617","name":"info message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"InputPrompt","variable_id":"fff2340ce59041939057820390cca48d","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Provide us with brief project description to picture your project needs better for one of our Designers experts.\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for your input!\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"df103f5e05d9425fb2e2c41a2c4d12af","name":"User input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"cd67df71aaf3455f978413fe22348941","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Here you can put your drawings or other inspirations to help us understand best solution for your order!\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:bb07f93b3bfb4d2fa090ac34d529ae02:field:Acknowledgement\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"bb07f93b3bfb4d2fa090ac34d529ae02","name":"Attachment input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"ImageOutputPrompt","url":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"Screenshot_2025-03-02_144108-removebg-preview_1741022355704.png\";})()"},"alt_text":{"type":"String","mode":"string","value":""},"id":"18826ca26b0545918a77b5bb3a35cecc","name":"goodbye picture","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:4e665c2ef40b422293c855d77e4be7ca:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"4e665c2ef40b422293c855d77e4be7ca","name":"goodbye msg","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Choosing this option you can update already existing 3D model order.\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"c99a7ddddd4746399e9fffc293b543ab","name":"info message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"RecordOutputPrompt","mode":"query","table":"sc_req_item","fields":["number","short_description","quantity","price","assignment_group","comments_and_work_notes"],"request_feedback":true,"id":"700528aa3eda4423943c38a7d1e0622a","name":"Ticket card response","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"reference_qualifier_condition":"active=true^requested_for={{vaInputs.user}}","condition":{"type":"Condition","mode":"glide_query","value":"active=true^requested_for={{vaInputs.user}}"}}],"edges":[{"type":"Edge","source_node_id":"df103f5e05d9425fb2e2c41a2c4d12af","target_node_id":"bb07f93b3bfb4d2fa090ac34d529ae02","id":"37cdddd503e04971884c7f4d187feaeb"},{"type":"Edge","source_node_id":"97e4950fefcd4d1bb7992c8bded64d3a","target_node_id":"25f6b2fa874e435a82c505fb1b1af129","id":"e3a3b72c657f4289bef1f6188c05d4f1"},{"type":"Edge","source_node_id":"25f6b2fa874e435a82c505fb1b1af129","target_node_id":"fa38b65be8714eb2adc97347c2a1b32b","id":"71d50aece1734225ae44efc9ed661317"},{"type":"Edge","source_node_id":"fa38b65be8714eb2adc97347c2a1b32b","target_node_id":"320b6a3593f0453ba702eae89dfdfddc","id":"bc5ac0c4b7d04d11908039f58536eec3"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"20a025e13e5843f5a80420bb0bc43f58","branch_id":"c69f6f63b55f40efa0f0bbe2cfa15359","id":"3332d6618db74689a3378a1e3fe1260d","name":"c69f6f63b55f40efa0f0bbe2cfa15359"},{"type":"Edge","source_node_id":"7664792c386748aab3d937bd7a9562d7","target_node_id":"14b38bc46a6c4560be4158ae0b95bcc0","id":"923c14caa6bc48679b993c61ae6fe628"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"6108e86cb2a74dc295bdf6f4295ac617","branch_id":"b9435830c18841718ce86969cbf73e85","id":"2a441f1a6eb445e89421fec0ef636fd9","name":"b9435830c18841718ce86969cbf73e85"},{"type":"Edge","source_node_id":"6108e86cb2a74dc295bdf6f4295ac617","target_node_id":"df103f5e05d9425fb2e2c41a2c4d12af","id":"68bc58395ba94d9d8556c26e94bf39cf"},{"type":"Edge","source_node_id":"bb07f93b3bfb4d2fa090ac34d529ae02","target_node_id":"7664792c386748aab3d937bd7a9562d7","id":"c5642ef6c78c4109b71af81823610820"},{"type":"Edge","source_node_id":"18826ca26b0545918a77b5bb3a35cecc","target_node_id":"9ddbed90de5d4cdb8bc7b2dcd938f043","id":"1e0a9d1286044be080fe413fcd352bc4"},{"type":"Edge","source_node_id":"14b38bc46a6c4560be4158ae0b95bcc0","target_node_id":"4e665c2ef40b422293c855d77e4be7ca","id":"bbd9924cd4fb42eb84bfff842d1469c4"},{"type":"Edge","source_node_id":"4e665c2ef40b422293c855d77e4be7ca","target_node_id":"18826ca26b0545918a77b5bb3a35cecc","id":"7363ab9ccf2441e9bf4289b5618a8332"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"c99a7ddddd4746399e9fffc293b543ab","branch_id":"4c09073b6f0349499e60b2b3b5a9c99d","id":"3e63f68d8ad4473b99b781addb7db6bc","name":"4c09073b6f0349499e60b2b3b5a9c99d"},{"type":"Edge","source_node_id":"c99a7ddddd4746399e9fffc293b543ab","target_node_id":"700528aa3eda4423943c38a7d1e0622a","id":"c1c9a3dae0a0408b98b7d9a94da47dae"},{"type":"Edge","source_node_id":"700528aa3eda4423943c38a7d1e0622a","target_node_id":"6d53948bc1a54ae190d9a526d19a9d55","id":"baa6bb4a96da4cd7873988de83e8186f"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"3D Designer Team Help","element":"3D Designer Team Help"},{"name":"3D Print ticket update","element":"3D print ticket update"},{"name":"3D model project license","element":"3D model project license"}],"id":"8289324df0fc442ab2e2e2ddaf52399a","name":"assistance_topics","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Assistance Topics"},{"type":"Reference","table":"x_1514542_3d_ninja_3d_nijna_orders","auto_select":false,"id":"95170fdd5e54435ebbd757f8f5b33706","name":"designers_ticket","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"user_input","list":false,"id":"fff2340ce59041939057820390cca48d","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Image","id":"cd67df71aaf3455f978413fe22348941","name":"attachment_input","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"29888a8183e31210a7c1e970deaad3f4","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"918318e983002210a7c1e970deaad36a","name":"_PRVW__7891a0eb8c174ffe9ff3df5bfdbeacd3","key_phrases":["3D Ninja Shop","3d","3d print","3d items","ninja shop"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"3D Ninja Shop Virtual Agent","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Virtual Ninja","library":false,"csTopicId":"d064d06583402210a7c1e970deaad366","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>918318e983002210a7c1e970deaad36a</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.73",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "97e4950fefcd4d1bb7992c8bded64d3a": {
+          "id": "97e4950fefcd4d1bb7992c8bded64d3a",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "9ddbed90de5d4cdb8bc7b2dcd938f043": {
+          "id": "9ddbed90de5d4cdb8bc7b2dcd938f043",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "25f6b2fa874e435a82c505fb1b1af129": {
+          "id": "25f6b2fa874e435a82c505fb1b1af129",
+          "stepType": "TextOutput",
+          "name": "Virtual Ninja Greeting",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Hello there "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user.first_name}}",
+                        "displayValue": "Input Variables➛User➛First name"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " 👋"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "I'm your friendly Virtual Ninja Chatbot, here to assist you with lightning-fast responses and stealthy solutions. "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Whether you need help or just want to chat, I've got your back like a true ninja. Let's dive into the digital dojo and make your experience awesome! 🥷💬"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "67e26b7bf44742ed9dd49f62e01972ec"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "fa38b65be8714eb2adc97347c2a1b32b": {
+          "name": "Assistance Topics",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Topics I can help your with please find below!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "8289324df0fc442ab2e2e2ddaf52399a",
+          "detailDescription": "",
+          "id": "fa38b65be8714eb2adc97347c2a1b32b",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "320b6a3593f0453ba702eae89dfdfddc": {
+          "id": "320b6a3593f0453ba702eae89dfdfddc",
+          "stepType": "Decision",
+          "name": "Button choice"
+        },
+        "6d53948bc1a54ae190d9a526d19a9d55": {
+          "id": "6d53948bc1a54ae190d9a526d19a9d55",
+          "stepType": "ImplicitEnd"
+        },
+        "20a025e13e5843f5a80420bb0bc43f58": {
+          "id": "20a025e13e5843f5a80420bb0bc43f58",
+          "stepType": "ImplicitEnd"
+        },
+        "7664792c386748aab3d937bd7a9562d7": {
+          "id": "7664792c386748aab3d937bd7a9562d7",
+          "stepType": "CrudAction",
+          "name": "designers ticket",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "opened_by",
+                  "expression": "{{vaInputs.user}}",
+                  "id": "674ee074b1b04142b4e3212b6265e6a7"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "price",
+                  "expression": "300",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "300"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "865f20d884eb48b380a2caac9b8b9af3"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "Virtual Ninja assistance ticket",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "Virtual Ninja assistance ticket"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "94dcbf7b65984b26880f9abbf8dd7ab8"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "description",
+                  "expression": "{{vaInputs.user}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.user_input}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.user}}",
+                            "displayValue": "Input Variables➛User"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": " ask for direct contact on project details on "
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.user.email}}",
+                            "displayValue": "Input Variables➛User➛Email"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ". "
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "Please find user input:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.user_input}}",
+                            "displayValue": "Input Variables➛User Input"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "18dabd0d1c46434087d9ed47f52d07ff"
+                }
+              ]
+            },
+            "queryString": "opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.user_input}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "{{vaInputs.attachment_input}}",
+              "mode": "data_pill"
+            }
+          ],
+          "variableId": "95170fdd5e54435ebbd757f8f5b33706"
+        },
+        "14b38bc46a6c4560be4158ae0b95bcc0": {
+          "id": "14b38bc46a6c4560be4158ae0b95bcc0",
+          "stepType": "LinkOutput",
+          "name": "ticket number",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.designers_ticket.number}}",
+                      "displayValue": "Input Variables➛Designers Ticket➛Number"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.designers_ticket.short_description}}",
+                      "displayValue": "Input Variables➛Designers Ticket➛Project brief desc"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Here is the link for your ticket "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.designers_ticket.number}}",
+                      "displayValue": "Input Variables➛Designers Ticket➛Number"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ":"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "6108e86cb2a74dc295bdf6f4295ac617": {
+          "id": "6108e86cb2a74dc295bdf6f4295ac617",
+          "stepType": "TextOutput",
+          "name": "info message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "This choice is to create a ticket to 3D Designers Team"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "2a24b1fd7a5247eabf548b4a96e0c3ec"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "df103f5e05d9425fb2e2c41a2c4d12af": {
+          "id": "df103f5e05d9425fb2e2c41a2c4d12af",
+          "stepType": "TextPrompt",
+          "name": "User input",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Provide us with brief project description to picture your project needs better for one of our Designers experts."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thanks for your input!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "fff2340ce59041939057820390cca48d",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "bb07f93b3bfb4d2fa090ac34d529ae02": {
+          "id": "bb07f93b3bfb4d2fa090ac34d529ae02",
+          "stepType": "FilePrompt",
+          "name": "Attachment input",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Here you can put your drawings or other inspirations to help us understand best solution for your order!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Incident will be created in a second 🥷"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "cd67df71aaf3455f978413fe22348941",
+          "detailDescription": ""
+        },
+        "18826ca26b0545918a77b5bb3a35cecc": {
+          "id": "18826ca26b0545918a77b5bb3a35cecc",
+          "stepType": "ImageOutput",
+          "name": "goodbye picture",
+          "url": {
+            "value": "Screenshot_2025-03-02_144108-removebg-preview_1741022355704.png",
+            "mode": "db_image"
+          },
+          "altText": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "variableId": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "4e665c2ef40b422293c855d77e4be7ca": {
+          "id": "4e665c2ef40b422293c855d77e4be7ca",
+          "stepType": "TextOutput",
+          "name": "goodbye msg",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Thanks for a nice chat with me! Stay tuned and let me know if you need help with 3D printing anytime! 🥷"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "ceabee4beaf9499081073440b0265b2e"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "c99a7ddddd4746399e9fffc293b543ab": {
+          "id": "c99a7ddddd4746399e9fffc293b543ab",
+          "stepType": "TextOutput",
+          "name": "info message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Choosing this option you can update already existing 3D model order."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "9855f5e8a75a47dc8589bfdb831b07b3"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "700528aa3eda4423943c38a7d1e0622a": {
+          "id": "700528aa3eda4423943c38a7d1e0622a",
+          "stepType": "RecordOutput",
+          "name": "Ticket card response",
+          "variableId": "",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "script",
+          "tableName": "sc_req_item",
+          "fields": [
+            "number",
+            "short_description",
+            "quantity",
+            "price",
+            "assignment_group",
+            "comments_and_work_notes"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true^requested_for={{vaInputs.user}}"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "37cdddd503e04971884c7f4d187feaeb",
+          "edgeType": "Edge",
+          "source": "df103f5e05d9425fb2e2c41a2c4d12af",
+          "target": "bb07f93b3bfb4d2fa090ac34d529ae02",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e3a3b72c657f4289bef1f6188c05d4f1",
+          "edgeType": "Edge",
+          "source": "97e4950fefcd4d1bb7992c8bded64d3a",
+          "target": "25f6b2fa874e435a82c505fb1b1af129",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "71d50aece1734225ae44efc9ed661317",
+          "edgeType": "Edge",
+          "source": "25f6b2fa874e435a82c505fb1b1af129",
+          "target": "fa38b65be8714eb2adc97347c2a1b32b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bc5ac0c4b7d04d11908039f58536eec3",
+          "edgeType": "Edge",
+          "source": "fa38b65be8714eb2adc97347c2a1b32b",
+          "target": "320b6a3593f0453ba702eae89dfdfddc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3332d6618db74689a3378a1e3fe1260d",
+          "edgeType": "Branch",
+          "source": "320b6a3593f0453ba702eae89dfdfddc",
+          "target": "20a025e13e5843f5a80420bb0bc43f58",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.assistance_topics=3D model project license",
+            "mode": "query"
+          },
+          "label": "3d project licence"
+        },
+        {
+          "id": "923c14caa6bc48679b993c61ae6fe628",
+          "edgeType": "Edge",
+          "source": "7664792c386748aab3d937bd7a9562d7",
+          "target": "14b38bc46a6c4560be4158ae0b95bcc0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2a441f1a6eb445e89421fec0ef636fd9",
+          "edgeType": "Branch",
+          "source": "320b6a3593f0453ba702eae89dfdfddc",
+          "target": "6108e86cb2a74dc295bdf6f4295ac617",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.assistance_topics=3D Designer Team Help",
+            "mode": "query"
+          },
+          "label": "Create ticket for designers"
+        },
+        {
+          "id": "68bc58395ba94d9d8556c26e94bf39cf",
+          "edgeType": "Edge",
+          "source": "6108e86cb2a74dc295bdf6f4295ac617",
+          "target": "df103f5e05d9425fb2e2c41a2c4d12af",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c5642ef6c78c4109b71af81823610820",
+          "edgeType": "Edge",
+          "source": "bb07f93b3bfb4d2fa090ac34d529ae02",
+          "target": "7664792c386748aab3d937bd7a9562d7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1e0a9d1286044be080fe413fcd352bc4",
+          "edgeType": "Edge",
+          "source": "18826ca26b0545918a77b5bb3a35cecc",
+          "target": "9ddbed90de5d4cdb8bc7b2dcd938f043",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bbd9924cd4fb42eb84bfff842d1469c4",
+          "edgeType": "Edge",
+          "source": "14b38bc46a6c4560be4158ae0b95bcc0",
+          "target": "4e665c2ef40b422293c855d77e4be7ca",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7363ab9ccf2441e9bf4289b5618a8332",
+          "edgeType": "Edge",
+          "source": "4e665c2ef40b422293c855d77e4be7ca",
+          "target": "18826ca26b0545918a77b5bb3a35cecc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3e63f68d8ad4473b99b781addb7db6bc",
+          "edgeType": "Branch",
+          "source": "320b6a3593f0453ba702eae89dfdfddc",
+          "target": "c99a7ddddd4746399e9fffc293b543ab",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.assistance_topics=3D print ticket update",
+            "mode": "query"
+          },
+          "label": "Ready print 3d model (ticket update)"
+        },
+        {
+          "id": "c1c9a3dae0a0408b98b7d9a94da47dae",
+          "edgeType": "Edge",
+          "source": "c99a7ddddd4746399e9fffc293b543ab",
+          "target": "700528aa3eda4423943c38a7d1e0622a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "baa6bb4a96da4cd7873988de83e8186f",
+          "edgeType": "Edge",
+          "source": "700528aa3eda4423943c38a7d1e0622a",
+          "target": "6d53948bc1a54ae190d9a526d19a9d55",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "8289324df0fc442ab2e2e2ddaf52399a": {
+      "id": "8289324df0fc442ab2e2e2ddaf52399a",
+      "name": "assistance_topics",
+      "label": "Assistance Topics",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "3D Designer Team Help",
+          "value": "3D Designer Team Help"
+        },
+        {
+          "label": "3D Print ticket update",
+          "value": "3D print ticket update"
+        },
+        {
+          "label": "3D model project license",
+          "value": "3D model project license",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "fa38b65be8714eb2adc97347c2a1b32b",
+      "isHidden": false
+    },
+    "95170fdd5e54435ebbd757f8f5b33706": {
+      "id": "95170fdd5e54435ebbd757f8f5b33706",
+      "name": "designers_ticket",
+      "label": "Designers Ticket",
+      "varType": "reference",
+      "table": "x_1514542_3d_ninja_3d_nijna_orders",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "7664792c386748aab3d937bd7a9562d7",
+      "isHidden": false
+    },
+    "fff2340ce59041939057820390cca48d": {
+      "id": "fff2340ce59041939057820390cca48d",
+      "name": "user_input",
+      "label": "User Input",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc0MTAyMDU5NjU1OSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "df103f5e05d9425fb2e2c41a2c4d12af",
+      "isHidden": false
+    },
+    "cd67df71aaf3455f978413fe22348941": {
+      "id": "cd67df71aaf3455f978413fe22348941",
+      "name": "attachment_input",
+      "label": "Attachment Input",
+      "varType": "image",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "bb07f93b3bfb4d2fa090ac34d529ae02",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__7891a0eb8c174ffe9ff3df5bfdbeacd3</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 08:56:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>22bfd9c683002210a7c1e970deaad3e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_cb_design_topic_22bfd9c683002210a7c1e970deaad3e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 08:56:05</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="INSERT_OR_UPDATE">
+        <order/>
+        <sp_css_include display_value="read only fields">2b1b18ad83402210a7c1e970deaad32f</sp_css_include>
+        <sp_theme display_value="Ninja theme">905cde8d83271210a7c1e970deaad3c3</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:39:35</sys_created_on>
+        <sys_id>ba2b58ad83402210a7c1e970deaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>read only fields.Ninja theme</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_ba2b58ad83402210a7c1e970deaad370</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 14:39:35</sys_updated_on>
+    </m2m_sp_theme_css_include>
+</record_update>

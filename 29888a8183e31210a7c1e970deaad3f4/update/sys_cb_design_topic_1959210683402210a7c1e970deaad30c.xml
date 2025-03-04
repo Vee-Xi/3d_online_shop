@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__32f053ca015c4f7fbfba3528429f79cc">1959210683402210a7c1e970deaad308</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"035c141dd51e45f2914b6cc31412dea5","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"035c141dd51e45f2914b6cc31412dea5"}],"goals":[{"name":"primary","trigger_id":"035c141dd51e45f2914b6cc31412dea5","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"bfd9ca3b74264a68a0b8543159566d20","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"a3817a5f7ca7439b83707b20c30fcf9c","name":"End","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"{{vaVars.greeting_message}}"}],"request_feedback":true,"id":"d2327c9f0cb74a2983f695746d52d0f2","name":"Show Greeting Message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ScriptedAction","script":"(function execute() {\n    vaVars.greeting_message = vaSystem.getGreetingMessage();\n})()\n","id":"d9f84b23b3dc4d9891ddac278259decb","name":"Get Greeting Message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"ScriptedAction","script":"(function execute() {\n    var greetingMessage = vaSystem.getTopicSelectionMessage();\n    vaSystem.sendTopicPickerControl(greetingMessage);\n})()\n","id":"3b0fa5a45fa94052bd1b546ea1f7303b","name":"Send Topic Picker","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Search Text Not Set","expression":{"type":"Applicability","mode":"script","value":"(function execute() {\n    return gs.nil(vaVars.global_search_text)\n})()\n"},"id":"02fdab9bff854efb826c4030e80129a3","name":"Search Text Not Set","expert_mode":false},{"type":"Branch","label":"Search Text Set","expression":{"type":"Applicability","mode":"script","value":"(function execute() {\n    return !gs.nil(vaVars.global_search_text)\n})()\n"},"id":"3c632ee0f5d24da6a6ab204c1b8b9097","name":"Search Text Set","expert_mode":false}],"id":"60cdf6a874894c84841d99a073fbba0b","goal_id":"primary","expert_mode":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Pre-chat not executed","expression":{"type":"Applicability","mode":"script","value":"(function execute() {\n    return !vaVars.global_preChatExecuted;\n})()\n"},"id":"b808d78070d74a769770ab3271af899e","name":"Pre-chat not executed","expert_mode":false},{"type":"Branch","label":"Pre-chat executed","expression":{"type":"Applicability","mode":"script","value":"(function execute() {\n    return vaVars.global_preChatExecuted;\n})()\n"},"id":"057e5cbc6ec8410f80a758811a32303d","name":"Pre-chat executed","expert_mode":false}],"id":"6bd621fcf54841abb81d20cde33081bb","goal_id":"primary","expert_mode":false},{"type":"ScriptedAction","script":"(function execute() {\n    vaSystem.topicDiscovery();\n})()\n","id":"0896444786e74025bfa890732d0fbd24","name":"Topic Discovery","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"d9f84b23b3dc4d9891ddac278259decb","target_node_id":"d2327c9f0cb74a2983f695746d52d0f2","id":"f2ee6b77d3094e7a909569c07969d920"},{"type":"Edge","source_node_id":"d2327c9f0cb74a2983f695746d52d0f2","target_node_id":"3b0fa5a45fa94052bd1b546ea1f7303b","id":"a32eac00773045f6a9490f13b8896a8c"},{"type":"Edge","source_node_id":"3b0fa5a45fa94052bd1b546ea1f7303b","target_node_id":"a3817a5f7ca7439b83707b20c30fcf9c","id":"3c89a30f457c488eaaa1ae8951b10a32"},{"type":"Edge","source_node_id":"bfd9ca3b74264a68a0b8543159566d20","target_node_id":"60cdf6a874894c84841d99a073fbba0b","id":"36c63e9964114b97b4813b379293d4eb"},{"type":"Edge","source_node_id":"60cdf6a874894c84841d99a073fbba0b","target_node_id":"6bd621fcf54841abb81d20cde33081bb","branch_id":"02fdab9bff854efb826c4030e80129a3","id":"8ab72eaddb6b41df879b12ae8db8cb1a","name":"02fdab9bff854efb826c4030e80129a3"},{"type":"Edge","source_node_id":"6bd621fcf54841abb81d20cde33081bb","target_node_id":"d9f84b23b3dc4d9891ddac278259decb","branch_id":"b808d78070d74a769770ab3271af899e","id":"5a1fbe26a3694a50bb201a436a41dc70","name":"b808d78070d74a769770ab3271af899e"},{"type":"Edge","source_node_id":"6bd621fcf54841abb81d20cde33081bb","target_node_id":"3b0fa5a45fa94052bd1b546ea1f7303b","branch_id":"057e5cbc6ec8410f80a758811a32303d","id":"e7fb7b1648f345ac917988f1ea6935db","name":"057e5cbc6ec8410f80a758811a32303d"},{"type":"Edge","source_node_id":"60cdf6a874894c84841d99a073fbba0b","target_node_id":"0896444786e74025bfa890732d0fbd24","branch_id":"3c632ee0f5d24da6a6ab204c1b8b9097","id":"f4e82879a84849dbb74b615c5ef5ef1d","name":"3c632ee0f5d24da6a6ab204c1b8b9097"},{"type":"Edge","source_node_id":"0896444786e74025bfa890732d0fbd24","target_node_id":"a3817a5f7ca7439b83707b20c30fcf9c","id":"3808fdfd503f48409c96a5e0867ab4f7"}],"id":"primary"}],"script_variables":[{"type":"String","name":"greeting_message","value":{"type":"String","mode":"string"},"list":false,"id":"a76371dc6b5e47cf8929f621c0766d2c","formatType":"text","secure":false,"sensitive":false,"aiInput":false}],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"3130eb193dc445d3ba59fa245cebc4e3","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":["public"],"scope":"global","domain":"global","topic_type":"SETUP_TOPIC","channels":[],"dialog_acts_enabled":false,"id":"120e685053130010cf8cddeeff7b12ab","name":"_PRVW__32f053ca015c4f7fbfba3528429f79cc","key_phrases":["Greetings"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Presents a greeting to the user at the beginning of a conversation.","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Greetings.","library":false,"csTopicId":"aa0e685053130010cf8cddeeff7b127d","readOnly":true,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>120e685053130010cf8cddeeff7b12ab</design_topic_id>
+        <graph>{
+      "graph_api_version": "1.0.34",
+      "goals": {
+      "primary": {
+      "id": "primary",
+      "trigger": {
+      "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+      "bfd9ca3b74264a68a0b8543159566d20": {
+      "id": "bfd9ca3b74264a68a0b8543159566d20",
+      "stepType": "Start",
+      "name": "Start",
+      "greetingResponse": {
+      "value": "",
+      "mode": "simple"
+      }
+      },
+      "a3817a5f7ca7439b83707b20c30fcf9c": {
+      "id": "a3817a5f7ca7439b83707b20c30fcf9c",
+      "stepType": "TerminateGoal",
+      "name": "End",
+      "confirmationMessage": {
+      "mode": "simple",
+      "value": ""
+      }
+      },
+      "d2327c9f0cb74a2983f695746d52d0f2": {
+      "id": "d2327c9f0cb74a2983f695746d52d0f2",
+      "stepType": "TextOutput",
+      "name": "Show Greeting Message",
+      "value": {
+      "value": [
+      {
+      "type": "paragraph",
+      "children": [
+      {
+      "text": ""
+      },
+      {
+      "type": "datapill",
+      "dataPill": {
+      "value": "{{vaVars.greeting_message}}",
+      "displayValue": "vaVars➛greeting_message"
+      },
+      "children": [
+      {
+      "text": ""
+      }
+      ]
+      },
+      {
+      "text": ""
+      }
+      ]
+      }
+      ],
+      "mode": "simple"
+      },
+      "applicability": {
+      "mode": "script",
+      "value": ""
+      },
+      "secure": false
+      },
+      "d9f84b23b3dc4d9891ddac278259decb": {
+      "id": "d9f84b23b3dc4d9891ddac278259decb",
+      "name": "Get Greeting Message",
+      "script": "(function execute() {\n    vaVars.greeting_message = vaSystem.getGreetingMessage();\n})()\n",
+      "stepType": "ScriptAction",
+      "applicability": {
+      "mode": "script",
+      "value": ""
+      }
+      },
+      "3b0fa5a45fa94052bd1b546ea1f7303b": {
+      "id": "3b0fa5a45fa94052bd1b546ea1f7303b",
+      "name": "Send Topic Picker",
+      "script": "(function execute() {\n    var greetingMessage = vaSystem.getTopicSelectionMessage();\n    vaSystem.sendTopicPickerControl(greetingMessage);\n})()\n",
+      "stepType": "ScriptAction",
+      "applicability": {
+      "mode": "query",
+      "value": ""
+      }
+      },
+      "60cdf6a874894c84841d99a073fbba0b": {
+      "id": "60cdf6a874894c84841d99a073fbba0b",
+      "stepType": "Decision",
+      "name": "Decision"
+      },
+      "6bd621fcf54841abb81d20cde33081bb": {
+      "id": "6bd621fcf54841abb81d20cde33081bb",
+      "stepType": "Decision",
+      "name": "Decision"
+      },
+      "0896444786e74025bfa890732d0fbd24": {
+      "id": "0896444786e74025bfa890732d0fbd24",
+      "name": "Topic Discovery",
+      "script": "(function execute() {\n    vaSystem.topicDiscovery();\n})()\n",
+      "stepType": "ScriptAction",
+      "applicability": {
+      "value": "",
+      "mode": "query"
+      }
+      }
+      },
+      "edges": [
+      {
+      "id": "f2ee6b77d3094e7a909569c07969d920",
+      "edgeType": "Edge",
+      "source": "d9f84b23b3dc4d9891ddac278259decb",
+      "target": "d2327c9f0cb74a2983f695746d52d0f2",
+      "sourcePort": "",
+      "targetPort": ""
+      },
+      {
+      "id": "a32eac00773045f6a9490f13b8896a8c",
+      "edgeType": "Edge",
+      "source": "d2327c9f0cb74a2983f695746d52d0f2",
+      "target": "3b0fa5a45fa94052bd1b546ea1f7303b",
+      "sourcePort": "",
+      "targetPort": ""
+      },
+      {
+      "id": "3c89a30f457c488eaaa1ae8951b10a32",
+      "edgeType": "Edge",
+      "source": "3b0fa5a45fa94052bd1b546ea1f7303b",
+      "target": "a3817a5f7ca7439b83707b20c30fcf9c",
+      "sourcePort": "",
+      "targetPort": ""
+      },
+      {
+      "id": "36c63e9964114b97b4813b379293d4eb",
+      "edgeType": "Edge",
+      "source": "bfd9ca3b74264a68a0b8543159566d20",
+      "target": "60cdf6a874894c84841d99a073fbba0b",
+      "sourcePort": "",
+      "targetPort": ""
+      },
+      {
+      "id": "8ab72eaddb6b41df879b12ae8db8cb1a",
+      "edgeType": "Branch",
+      "source": "60cdf6a874894c84841d99a073fbba0b",
+      "target": "6bd621fcf54841abb81d20cde33081bb",
+      "sourcePort": "",
+      "targetPort": "",
+      "expression": {
+      "mode": "script",
+      "value": "(function execute() {\n    return gs.nil(vaVars.global_search_text)\n})()\n"
+      },
+      "label": "Search Text Not Set"
+      },
+      {
+      "id": "5a1fbe26a3694a50bb201a436a41dc70",
+      "edgeType": "Branch",
+      "source": "6bd621fcf54841abb81d20cde33081bb",
+      "target": "d9f84b23b3dc4d9891ddac278259decb",
+      "sourcePort": "",
+      "targetPort": "",
+      "expression": {
+      "mode": "script",
+      "value": "(function execute() {\n    return !vaVars.global_preChatExecuted;\n})()\n"
+      },
+      "label": "Pre-chat not executed"
+      },
+      {
+      "id": "e7fb7b1648f345ac917988f1ea6935db",
+      "edgeType": "Branch",
+      "source": "6bd621fcf54841abb81d20cde33081bb",
+      "target": "3b0fa5a45fa94052bd1b546ea1f7303b",
+      "sourcePort": "",
+      "targetPort": "",
+      "expression": {
+      "mode": "script",
+      "value": "(function execute() {\n    return vaVars.global_preChatExecuted;\n})()\n"
+      },
+      "label": "Pre-chat executed"
+      },
+      {
+      "id": "f4e82879a84849dbb74b615c5ef5ef1d",
+      "edgeType": "Branch",
+      "source": "60cdf6a874894c84841d99a073fbba0b",
+      "target": "0896444786e74025bfa890732d0fbd24",
+      "sourcePort": "",
+      "targetPort": "",
+      "expression": {
+      "mode": "script",
+      "value": "(function execute() {\n    return !gs.nil(vaVars.global_search_text)\n})()\n"
+      },
+      "label": "Search Text Set"
+      },
+      {
+      "id": "3808fdfd503f48409c96a5e0867ab4f7",
+      "edgeType": "Edge",
+      "source": "0896444786e74025bfa890732d0fbd24",
+      "target": "a3817a5f7ca7439b83707b20c30fcf9c",
+      "sourcePort": "",
+      "targetPort": ""
+      }
+      ]
+      }
+      },
+      "variables": {
+      "a76371dc6b5e47cf8929f621c0766d2c": {
+      "id": "a76371dc6b5e47cf8929f621c0766d2c",
+      "value": {
+      "mode": "simple",
+      "value": ""
+      },
+      "name": "greeting_message",
+      "label": "greeting_message",
+      "varType": "script",
+      "category": "vaVars"
+      },
+      "3130eb193dc445d3ba59fa245cebc4e3": {
+      "category": "vaInputs",
+      "id": "3130eb193dc445d3ba59fa245cebc4e3",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+      }
+      }
+      }</graph>
+        <name>_PRVW__32f053ca015c4f7fbfba3528429f79cc</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 09:38:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1959210683402210a7c1e970deaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sys_cb_design_topic_1959210683402210a7c1e970deaad30c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 09:38:03</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

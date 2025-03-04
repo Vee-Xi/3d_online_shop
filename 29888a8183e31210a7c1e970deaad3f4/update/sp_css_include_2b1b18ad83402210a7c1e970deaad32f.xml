@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <lazy_load>false</lazy_load>
+        <name>read only fields</name>
+        <rtl_css_file_url/>
+        <source>local</source>
+        <sp_css display_value="read only variables">428b10ed83402210a7c1e970deaad374</sp_css>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:39:34</sys_created_on>
+        <sys_id>2b1b18ad83402210a7c1e970deaad32f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>read only fields</sys_name>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>sp_css_include_2b1b18ad83402210a7c1e970deaad32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 14:41:36</sys_updated_on>
+        <url/>
+    </sp_css_include>
+</record_update>
