@@ -29,17 +29,17 @@
             <sys_created_on>2025-02-04 13:23:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-04 14:41:56</sys_updated_on>
-            <value>google</value>
+            <sys_updated_on>2025-03-05 09:53:29</sys_updated_on>
+            <value>Google</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_choice_3</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Friend recommendation</label>
+            <label>Friend Recommendation</label>
             <language>en</language>
             <name>x_1514542_3d_ninja_3d_nijna_orders</name>
             <sequence>1</sequence>
@@ -48,17 +48,17 @@
             <sys_created_on>2025-02-04 13:23:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-04 14:41:56</sys_updated_on>
-            <value>friend recommendation</value>
+            <sys_updated_on>2025-03-05 09:53:54</sys_updated_on>
+            <value>Friend Recommendation</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_choice_3</element>
             <hint/>
             <inactive>false</inactive>
-            <label>TV spot</label>
+            <label>TV Spot</label>
             <language>en</language>
             <name>x_1514542_3d_ninja_3d_nijna_orders</name>
             <sequence>2</sequence>
@@ -67,17 +67,17 @@
             <sys_created_on>2025-02-04 13:23:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-04 14:41:56</sys_updated_on>
-            <value>tv spot</value>
+            <sys_updated_on>2025-03-05 09:54:08</sys_updated_on>
+            <value>TV Spot</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_choice_3</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Tiktok</label>
+            <label>Tik tok</label>
             <language>en</language>
             <name>x_1514542_3d_ninja_3d_nijna_orders</name>
             <sequence>3</sequence>
@@ -86,10 +86,10 @@
             <sys_created_on>2025-02-04 13:23:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-04 14:41:56</sys_updated_on>
-            <value>tiktok</value>
+            <sys_updated_on>2025-03-05 09:52:36</sys_updated_on>
+            <value>Tik tok</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -105,10 +105,10 @@
             <sys_created_on>2025-02-04 13:23:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-04 14:41:56</sys_updated_on>
-            <value>own search</value>
+            <sys_updated_on>2025-03-05 09:53:39</sys_updated_on>
+            <value>Own Search</value>
         </sys_choice>
     </sys_choice>
 </record_update>

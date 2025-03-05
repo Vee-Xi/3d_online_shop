@@ -3,11 +3,11 @@
         <element label="New Audio" max_length="40" name="u_audio_5" type="audio"/>
         <element attributes="edge_encryption_enabled=true" choice="3" label="How did you find us?" max_length="40" name="u_choice_3" type="string">
             <choice>
-                <element inactive_on_update="false" label="TV spot" sequence="2" value="tv spot"/>
-                <element inactive_on_update="false" label="Friend recommendation" sequence="1" value="friend recommendation"/>
-                <element inactive_on_update="false" label="Tiktok" sequence="3" value="tiktok"/>
-                <element inactive_on_update="false" label="Google" sequence="0" value="google"/>
-                <element inactive_on_update="false" label="Own Search" sequence="4" value="own search"/>
+                <element inactive_on_update="false" label="TV Spot" sequence="2" value="TV Spot"/>
+                <element inactive_on_update="false" label="Friend Recommendation" sequence="1" value="Friend Recommendation"/>
+                <element inactive_on_update="false" label="Tik tok" sequence="3" value="Tik tok"/>
+                <element inactive_on_update="false" label="Google" sequence="0" value="Google"/>
+                <element inactive_on_update="false" label="Own Search" sequence="4" value="Own Search"/>
             </choice>
         </element>
         <element attributes="omit_sys_original=true" label="Price" max_length="20" name="price" type="currency"/>

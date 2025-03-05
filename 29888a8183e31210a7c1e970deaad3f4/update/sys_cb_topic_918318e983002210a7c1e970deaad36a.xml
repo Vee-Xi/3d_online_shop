@@ -187,7 +187,7 @@
                   "operator": "=",
                   "operand": "opened_by",
                   "expression": "{{vaInputs.user}}",
-                  "id": "fe65b1e703734bf4b3cd19025f86bf07"
+                  "id": "96c29e9108f14bfa8387ff9a1900346a"
                 },
                 {
                   "prefix": "",
@@ -204,7 +204,7 @@
                       ]
                     }
                   ],
-                  "id": "f2de829676714847a3aa52ab5c0defbd"
+                  "id": "6eb03190ad31444cadc86762fb70ad8f"
                 },
                 {
                   "prefix": "",
@@ -221,13 +221,13 @@
                       ]
                     }
                   ],
-                  "id": "ab2273474b264571a53466ee9e0d075d"
+                  "id": "4d00df5f32ea40a9beae3291d34f615e"
                 },
                 {
                   "prefix": "",
                   "operator": "=",
                   "operand": "description",
-                  "expression": "{{vaInputs.user.first_name}} {{vaInputs.user.last_name}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.brief_description_user_input}}\n\nHow did you find us?\n{{vaInputs.how_you_found_us_variable}}",
+                  "expression": "{{vaInputs.user.first_name}} {{vaInputs.user.last_name}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nUser input provided via chat with Virtual Ninja Chatbot:\n\n{{vaInputs.brief_description_user_input}}",
                   "deserializedExpression": [
                     {
                       "type": "paragraph",
@@ -294,7 +294,7 @@
                       "type": "paragraph",
                       "children": [
                         {
-                          "text": "Please find user input:"
+                          "text": "User input provided via chat with Virtual Ninja Chatbot:"
                         }
                       ]
                     },
@@ -341,39 +341,23 @@
                       "type": "paragraph",
                       "children": [
                         {
-                          "text": "How did you find us?"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": ""
-                        },
-                        {
-                          "type": "datapill",
-                          "dataPill": {
-                            "value": "{{vaInputs.how_you_found_us_variable}}",
-                            "displayValue": "Input Variables➛How You Found Us"
-                          },
-                          "children": [
-                            {
-                              "text": ""
-                            }
-                          ]
-                        },
-                        {
                           "text": ""
                         }
                       ]
                     }
                   ],
-                  "id": "18bb84bec06d4795972432a94282bb17"
+                  "id": "d56d2115a559423996084f385eb45180"
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "u_choice_3",
+                  "expression": "{{vaInputs.how_you_found_us_variable}}",
+                  "id": "2bf8a2cdbca244f7845fcdbec048c72f"
                 }
               ]
             },
-            "queryString": "opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user.first_name}} {{vaInputs.user.last_name}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.brief_description_user_input}}\n\nHow did you find us?\n{{vaInputs.how_you_found_us_variable}}"
+            "queryString": "opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user.first_name}} {{vaInputs.user.last_name}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nUser input provided via chat with Virtual Ninja Chatbot:\n\n{{vaInputs.brief_description_user_input}}^u_choice_3={{vaInputs.how_you_found_us_variable}}"
           },
           "mode": "create",
           "record": "",
@@ -1503,6 +1487,22 @@
       },
       "edges": [
         {
+          "id": "29b35ea37c0740d785eb0c7a1688f720",
+          "edgeType": "Edge",
+          "source": "18413d2f9715444a852d11ee7c2f73d0",
+          "target": "7664792c386748aab3d937bd7a9562d7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "923c14caa6bc48679b993c61ae6fe628",
+          "edgeType": "Edge",
+          "source": "7664792c386748aab3d937bd7a9562d7",
+          "target": "14b38bc46a6c4560be4158ae0b95bcc0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
           "id": "bee2e5a146bc40e89a7b7989bb564745",
           "edgeType": "Edge",
           "source": "e5d7fd5cbddf4aa6b88dbfe010411804",
@@ -1523,14 +1523,6 @@
           "edgeType": "Edge",
           "source": "18826ca26b0545918a77b5bb3a35cecc",
           "target": "9ddbed90de5d4cdb8bc7b2dcd938f043",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "923c14caa6bc48679b993c61ae6fe628",
-          "edgeType": "Edge",
-          "source": "7664792c386748aab3d937bd7a9562d7",
-          "target": "14b38bc46a6c4560be4158ae0b95bcc0",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -1741,14 +1733,6 @@
           "targetPort": ""
         },
         {
-          "id": "29b35ea37c0740d785eb0c7a1688f720",
-          "edgeType": "Edge",
-          "source": "18413d2f9715444a852d11ee7c2f73d0",
-          "target": "7664792c386748aab3d937bd7a9562d7",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
           "id": "c1ea6aa1de4e415786ac70255140dba5",
           "edgeType": "Edge",
           "source": "e9ae32d90266452da5f4685b0b279ff4",
@@ -1894,24 +1878,24 @@
           "value": "Google"
         },
         {
-          "label": "TikTok",
-          "value": "TikTok"
+          "label": "Tik Tok",
+          "value": "Tik Tok"
         },
         {
-          "label": "TV spot",
-          "value": "TV spot",
+          "label": "TV Spot",
+          "value": "TV Spot",
           "checked": true,
           "meta": {}
         },
         {
-          "label": "Own search",
-          "value": "Own search",
+          "label": "Own Search",
+          "value": "Own Search",
           "checked": true,
           "meta": {}
         },
         {
-          "label": "Friend recommendation",
-          "value": "Friend recommendation",
+          "label": "Friend Recommendation",
+          "value": "Friend Recommendation",
           "checked": true,
           "meta": {}
         }
@@ -1943,14 +1927,14 @@
         <sys_created_on>2025-03-02 14:06:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>918318e983002210a7c1e970deaad36a</sys_id>
-        <sys_mod_count>97</sys_mod_count>
+        <sys_mod_count>105</sys_mod_count>
         <sys_name>3D Ninja Shop</sys_name>
         <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
         <sys_policy/>
         <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
         <sys_update_name>sys_cb_topic_918318e983002210a7c1e970deaad36a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-04 15:35:06</sys_updated_on>
+        <sys_updated_on>2025-03-05 09:58:37</sys_updated_on>
         <title>Virtual Ninja</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
