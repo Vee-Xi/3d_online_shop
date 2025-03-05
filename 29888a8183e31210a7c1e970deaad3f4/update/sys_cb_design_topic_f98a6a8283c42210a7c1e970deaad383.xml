@@ -1,17 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
-    <sys_cb_topic action="INSERT_OR_UPDATE">
-        <applicability/>
-        <applicability_mode>query</applicability_mode>
-        <autopilot_topic>false</autopilot_topic>
-        <category/>
-        <channels/>
-        <connect_queue/>
-        <context_profiles/>
-        <description>3D Ninja Shop Virtual Agent</description>
-        <dialog_acts_enabled>false</dialog_acts_enabled>
-        <expose_on_palette>false</expose_on_palette>
-        <flexible_conversation_switching>false</flexible_conversation_switching>
-        <foundational>false</foundational>
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__3770698f9c2946c1a0a7307ec339fc6f">358a2ece83842210a7c1e970deaad338</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"78e5952ee25c4bbb887ffe643d2d2cb7","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"78e5952ee25c4bbb887ffe643d2d2cb7"}],"goals":[{"name":"primary","trigger_id":"78e5952ee25c4bbb887ffe643d2d2cb7","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"97e4950fefcd4d1bb7992c8bded64d3a","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"9ddbed90de5d4cdb8bc7b2dcd938f043","name":"End","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:25f6b2fa874e435a82c505fb1b1af129:field:0 {0}\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"}],"request_feedback":true,"id":"25f6b2fa874e435a82c505fb1b1af129","name":"Virtual Ninja Greeting","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"fa38b65be8714eb2adc97347c2a1b32b","name":"Assistance Topics","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"8289324df0fc442ab2e2e2ddaf52399a","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Topics I can help your with please find below!\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Button choice","branches":[{"type":"Branch","label":"Create ticket for designers","expression":{"type":"Applicability","mode":"query","value":"assistance_topics=3D Designer Team Help"},"id":"4fc78c7392be4f8d82131680dc686a40","name":"Create ticket for designers","expert_mode":false},{"type":"Branch","label":"Ready print 3d model (ticket update)","expression":{"type":"Applicability","mode":"query","value":"assistance_topics=3D print ticket update"},"id":"c64010bfc66a44348460edc08938113b","name":"Ready print 3d model (ticket update)","expert_mode":false},{"type":"Branch","label":"3d Req List","expression":{"type":"Applicability","mode":"query","value":"assistance_topics=3D model project license"},"id":"bf66be1a6b6745ca94341cbb08dbbf97","name":"3d Req List","expert_mode":false},{"type":"Branch","label":"3D design news","expression":{"type":"Applicability","mode":"query","value":""},"id":"51b3a5bc8d1a4cf48ff96e04834c8efe","name":"3D design news","expert_mode":false}],"id":"320b6a3593f0453ba702eae89dfdfddc","goal_id":"primary","expert_mode":false},{"type":"CRUDAction","mode":"create","query":"opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user}}{{vaInputs.user.user_name}} {{vaInputs.user.first_name}}{{vaInputs.user.last_name}}ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.user_input}}","variable_id":"95170fdd5e54435ebbd757f8f5b33706","id":"7664792c386748aab3d937bd7a9562d7","name":"Designers Ticket Creation","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"data_pill","value":"{{vaInputs.attachment_input}}"}]},{"type":"LinkOutputPrompt","header":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Here is the link for your ticket {0}:\", vaContext.getRequesterLang(), [vaInputs.designers_ticket_creation.number.getDisplayValue()])"},"label":{"type":"String","mode":"string","value":"{{vaInputs.designers_ticket_creation.short_description}}"},"url":{"type":"String","mode":"string","value":"{{vaInputs.designers_ticket_creation.task_effective_number}}"},"link_type":"single","multi_link_script":"","id":"14b38bc46a6c4560be4158ae0b95bcc0","name":"ticket number","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"This choice is to create a ticket to 3D Designers Team\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"6108e86cb2a74dc295bdf6f4295ac617","name":"info message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"InputPrompt","variable_id":"fff2340ce59041939057820390cca48d","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Provide us with brief project description to picture your project needs better for one of our Designers experts.\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for your input!\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"df103f5e05d9425fb2e2c41a2c4d12af","name":"User input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"InputPrompt","variable_id":"cd67df71aaf3455f978413fe22348941","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Here you can put your drawings or other inspirations to help us understand best solution for your order!\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:bb07f93b3bfb4d2fa090ac34d529ae02:field:Acknowledgement\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"bb07f93b3bfb4d2fa090ac34d529ae02","name":"Attachment input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"ImageOutputPrompt","url":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"Screenshot_2025-03-02_144108-removebg-preview_1741022355704.png\";})()"},"alt_text":{"type":"String","mode":"string","value":""},"id":"18826ca26b0545918a77b5bb3a35cecc","name":"goodbye picture","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:4e665c2ef40b422293c855d77e4be7ca:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"4e665c2ef40b422293c855d77e4be7ca","name":"goodbye msg","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Choosing this option you can update already existing 3D model order.\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"c99a7ddddd4746399e9fffc293b543ab","name":"info message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"RecordOutputPrompt","mode":"variable","table":"sc_req_item","variable_id":"c2915b94364049438157fd48b0dc8c29","fields":["number","short_description","quantity","price","assignment_group","comments_and_work_notes"],"request_feedback":true,"id":"700528aa3eda4423943c38a7d1e0622a","name":"Ticket card response","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":""}},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"a22ab05b6123447c8b00ad565050a615","name":"dynamic choice List of records","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"c2915b94364049438157fd48b0dc8c29","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Find a 3D Request you want to update.\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Currently there is no ticket related to your User account.\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"active=true^requested_for={{vaInputs.user}}"},"description":""},{"type":"InputPrompt","variable_id":"b08bf8c9f16844dca0964e7418201e57","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Provide your update that will be visible for the 3D Ninja Support Team.\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"a92ee84535eb42d88a6ef0d6131fdaa4","name":"Update choosen req","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"CRUDAction","mode":"update","query":"comments={{vaInputs.update_choosen_req}}","variable_id":"c2915b94364049438157fd48b0dc8c29","id":"d13c297a79b048fb9cfe276e503f14de","name":"Update action","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"TableOutput","mode":"glide_record","conditionType":"simple","query":"active=true^requested_for={{vaInputs.user}}","sortBy":"^ORDERBYsys_created_on","table":"sc_req_item","title":{"type":"String","mode":"string","value":"All your active 3D Requests"},"columns":[{"name":"number","label":"Number"},{"name":"short_description","label":"Short description"},{"name":"quantity","label":"Quantity"},{"name":"price","label":"Price"}],"showColumnHeaders":true,"noResultsMessage":{"type":"String","mode":"string","value":"Currently there is no ticket related to your User account."},"id":"9266d26835484cd7be68d12b096bc888","name":"List of records","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:ff2a9be08a5a4a1ca4fc384193e1d7be:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"ff2a9be08a5a4a1ca4fc384193e1d7be","name":"Ticket update confirmed","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"InputPrompt","variable_id":"9a1c0c5ae8174943937450a95636d440","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Would you like to see list of all Help Topics?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"94087bac8a12407d9b9f426cbf46fbca","name":"need more help?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"true","expression":{"type":"Applicability","mode":"query","value":"need_more_help_=true"},"id":"e266c941ca3443e683d82b87db3974ae","name":"true","expert_mode":false},{"type":"Branch","label":"false","expression":{"type":"Applicability","mode":"query","value":"need_more_help_=false"},"id":"e2b83b661e71439abf0e65eeaf302f3c","name":"false","expert_mode":false}],"id":"8c57826104ce4ae8a76824adeb592ecf","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Choosing this option you can find newest Articles related to 3D Design Knowledge.\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"e5d7fd5cbddf4aa6b88dbfe010411804","name":"Knowledge Base","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"CardOutputPrompt","templateName":"Large image with text","fields":[{"name":"title","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Level Up Your Reality: Hot Trends in 3D Model Design That Are About to Blow Your Mind\", vaContext.getRequesterLang())"},"required":true},{"name":"description","value":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:918318e983002210a7c1e970deaad36a:node:d58e70ba7886460396fd76161028923d:field:description\", vaContext.getRequesterLang())"},"required":false},{"name":"image","value":{"type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"Screenshot 2025-02-05 121559_1741088168219.png\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","mode":"string","value":""},"required":false}],"id":"d58e70ba7886460396fd76161028923d","name":"Choosed KBA","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"request_feedback":true}],"edges":[{"type":"Edge","source_node_id":"7664792c386748aab3d937bd7a9562d7","target_node_id":"14b38bc46a6c4560be4158ae0b95bcc0","id":"923c14caa6bc48679b993c61ae6fe628"},{"type":"Edge","source_node_id":"e5d7fd5cbddf4aa6b88dbfe010411804","target_node_id":"d58e70ba7886460396fd76161028923d","id":"bee2e5a146bc40e89a7b7989bb564745"},{"type":"Edge","source_node_id":"8c57826104ce4ae8a76824adeb592ecf","target_node_id":"fa38b65be8714eb2adc97347c2a1b32b","branch_id":"e266c941ca3443e683d82b87db3974ae","id":"3acb6e3135ab40b89620eddd7dae8752","name":"e266c941ca3443e683d82b87db3974ae"},{"type":"Edge","source_node_id":"8c57826104ce4ae8a76824adeb592ecf","target_node_id":"4e665c2ef40b422293c855d77e4be7ca","branch_id":"e2b83b661e71439abf0e65eeaf302f3c","id":"8b9c9b9a128f461bb8dc4af92a621b15","name":"e2b83b661e71439abf0e65eeaf302f3c"},{"type":"Edge","source_node_id":"c99a7ddddd4746399e9fffc293b543ab","target_node_id":"a22ab05b6123447c8b00ad565050a615","id":"c1c9a3dae0a0408b98b7d9a94da47dae"},{"type":"Edge","source_node_id":"df103f5e05d9425fb2e2c41a2c4d12af","target_node_id":"bb07f93b3bfb4d2fa090ac34d529ae02","id":"37cdddd503e04971884c7f4d187feaeb"},{"type":"Edge","source_node_id":"97e4950fefcd4d1bb7992c8bded64d3a","target_node_id":"25f6b2fa874e435a82c505fb1b1af129","id":"e3a3b72c657f4289bef1f6188c05d4f1"},{"type":"Edge","source_node_id":"25f6b2fa874e435a82c505fb1b1af129","target_node_id":"fa38b65be8714eb2adc97347c2a1b32b","id":"71d50aece1734225ae44efc9ed661317"},{"type":"Edge","source_node_id":"fa38b65be8714eb2adc97347c2a1b32b","target_node_id":"320b6a3593f0453ba702eae89dfdfddc","id":"bc5ac0c4b7d04d11908039f58536eec3"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"6108e86cb2a74dc295bdf6f4295ac617","branch_id":"4fc78c7392be4f8d82131680dc686a40","id":"2a441f1a6eb445e89421fec0ef636fd9","name":"4fc78c7392be4f8d82131680dc686a40"},{"type":"Edge","source_node_id":"6108e86cb2a74dc295bdf6f4295ac617","target_node_id":"df103f5e05d9425fb2e2c41a2c4d12af","id":"68bc58395ba94d9d8556c26e94bf39cf"},{"type":"Edge","source_node_id":"bb07f93b3bfb4d2fa090ac34d529ae02","target_node_id":"7664792c386748aab3d937bd7a9562d7","id":"c5642ef6c78c4109b71af81823610820"},{"type":"Edge","source_node_id":"18826ca26b0545918a77b5bb3a35cecc","target_node_id":"9ddbed90de5d4cdb8bc7b2dcd938f043","id":"1e0a9d1286044be080fe413fcd352bc4"},{"type":"Edge","source_node_id":"14b38bc46a6c4560be4158ae0b95bcc0","target_node_id":"4e665c2ef40b422293c855d77e4be7ca","id":"bbd9924cd4fb42eb84bfff842d1469c4"},{"type":"Edge","source_node_id":"4e665c2ef40b422293c855d77e4be7ca","target_node_id":"18826ca26b0545918a77b5bb3a35cecc","id":"7363ab9ccf2441e9bf4289b5618a8332"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"c99a7ddddd4746399e9fffc293b543ab","branch_id":"c64010bfc66a44348460edc08938113b","id":"3e63f68d8ad4473b99b781addb7db6bc","name":"c64010bfc66a44348460edc08938113b"},{"type":"Edge","source_node_id":"a22ab05b6123447c8b00ad565050a615","target_node_id":"a92ee84535eb42d88a6ef0d6131fdaa4","id":"9afa9cc375194ffca67cbab9af3aa5ed"},{"type":"Edge","source_node_id":"a92ee84535eb42d88a6ef0d6131fdaa4","target_node_id":"d13c297a79b048fb9cfe276e503f14de","id":"064cdb52e79d4c229c2942a5ce8f6bc4"},{"type":"Edge","source_node_id":"d13c297a79b048fb9cfe276e503f14de","target_node_id":"700528aa3eda4423943c38a7d1e0622a","id":"286497e304ae4a05a655ba5052cc3339"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"9266d26835484cd7be68d12b096bc888","branch_id":"bf66be1a6b6745ca94341cbb08dbbf97","id":"3332d6618db74689a3378a1e3fe1260d","name":"bf66be1a6b6745ca94341cbb08dbbf97"},{"type":"Edge","source_node_id":"700528aa3eda4423943c38a7d1e0622a","target_node_id":"ff2a9be08a5a4a1ca4fc384193e1d7be","id":"baa6bb4a96da4cd7873988de83e8186f"},{"type":"Edge","source_node_id":"ff2a9be08a5a4a1ca4fc384193e1d7be","target_node_id":"4e665c2ef40b422293c855d77e4be7ca","id":"d99d35a94e564deb967557188d1f1859"},{"type":"Edge","source_node_id":"9266d26835484cd7be68d12b096bc888","target_node_id":"94087bac8a12407d9b9f426cbf46fbca","id":"80962a7fddd6444895e1a4023615c5e5"},{"type":"Edge","source_node_id":"94087bac8a12407d9b9f426cbf46fbca","target_node_id":"8c57826104ce4ae8a76824adeb592ecf","id":"5e7f12e367fe4a6bacc02b6d5b3be53c"},{"type":"Edge","source_node_id":"320b6a3593f0453ba702eae89dfdfddc","target_node_id":"e5d7fd5cbddf4aa6b88dbfe010411804","branch_id":"51b3a5bc8d1a4cf48ff96e04834c8efe","id":"cd9627edb4124f14b2da164fa5cb3dd6","name":"51b3a5bc8d1a4cf48ff96e04834c8efe"},{"type":"Edge","source_node_id":"d58e70ba7886460396fd76161028923d","target_node_id":"94087bac8a12407d9b9f426cbf46fbca","id":"5b175aad6364452f82951827294deb7e"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"3D Designer Team Help","element":"3D Designer Team Help"},{"name":"3D Print Ticket Update","element":"3D print ticket update"},{"name":"My Active Requests List","element":"3D model project license"},{"name":"3D Design News","element":"3D Design News"}],"id":"8289324df0fc442ab2e2e2ddaf52399a","name":"assistance_topics","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Assistance Topics"},{"type":"Reference","table":"x_1514542_3d_ninja_3d_nijna_orders","auto_select":false,"id":"95170fdd5e54435ebbd757f8f5b33706","name":"designers_ticket_creation","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"user_input","list":false,"id":"fff2340ce59041939057820390cca48d","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Image","id":"cd67df71aaf3455f978413fe22348941","name":"attachment_input","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"sc_req_item","reference_qualifier_condition":"active=true^requested_for={{vaInputs.user}}","auto_select":false,"id":"c2915b94364049438157fd48b0dc8c29","name":"dynamic_choice_list_of_records","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"update_choosen_req","list":false,"id":"b08bf8c9f16844dca0964e7418201e57","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"","auto_select":false,"id":"ccadf2dd4a174a41b804af2087d951ad","name":"update_action","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"True/False","id":"9a1c0c5ae8174943937450a95636d440","name":"need_more_help_","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"29888a8183e31210a7c1e970deaad3f4","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"918318e983002210a7c1e970deaad36a","name":"_PRVW__3770698f9c2946c1a0a7307ec339fc6f","key_phrases":["3D Ninja Shop","3d","3d print","3d items","ninja shop"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"3D Ninja Shop Virtual Agent","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Virtual Ninja","library":false,"csTopicId":"d064d06583402210a7c1e970deaad366","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>918318e983002210a7c1e970deaad36a</design_topic_id>
         <graph>{
   "graph_api_version": "1.0.73",
   "goals": {
@@ -187,7 +178,7 @@
                   "operator": "=",
                   "operand": "opened_by",
                   "expression": "{{vaInputs.user}}",
-                  "id": "fe65b1e703734bf4b3cd19025f86bf07"
+                  "id": "529363c6b5064380a9edf0fe2041690f"
                 },
                 {
                   "prefix": "",
@@ -204,7 +195,7 @@
                       ]
                     }
                   ],
-                  "id": "f2de829676714847a3aa52ab5c0defbd"
+                  "id": "c3dbca3fce8446309a5f5351102da425"
                 },
                 {
                   "prefix": "",
@@ -221,19 +212,49 @@
                       ]
                     }
                   ],
-                  "id": "ab2273474b264571a53466ee9e0d075d"
+                  "id": "9e3720b53b8b4808aabde826ef8b914a"
                 },
                 {
                   "prefix": "",
                   "operator": "=",
                   "operand": "description",
-                  "expression": "{{vaInputs.user.first_name}} {{vaInputs.user.last_name}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.brief_description_user_input}}\n\nHow did you find us?\n{{vaInputs.how_you_found_us_variable}}",
+                  "expression": "{{vaInputs.user}}{{vaInputs.user.user_name}} {{vaInputs.user.first_name}}{{vaInputs.user.last_name}}ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.user_input}}",
                   "deserializedExpression": [
                     {
                       "type": "paragraph",
                       "children": [
                         {
                           "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.user}}",
+                            "displayValue": "Input Variables➛User"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.user.user_name}}",
+                            "displayValue": "Input Variables➛User➛User ID"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": " "
                         },
                         {
                           "type": "datapill",
@@ -248,7 +269,7 @@
                           ]
                         },
                         {
-                          "text": " "
+                          "text": ""
                         },
                         {
                           "type": "datapill",
@@ -263,7 +284,7 @@
                           ]
                         },
                         {
-                          "text": " ask for direct contact on project details on "
+                          "text": "ask for direct contact on project details on "
                         },
                         {
                           "type": "datapill",
@@ -315,47 +336,8 @@
                         {
                           "type": "datapill",
                           "dataPill": {
-                            "value": "{{vaInputs.brief_description_user_input}}",
+                            "value": "{{vaInputs.user_input}}",
                             "displayValue": "Input Variables➛User Input"
-                          },
-                          "children": [
-                            {
-                              "text": ""
-                            }
-                          ]
-                        },
-                        {
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": ""
-                        }
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": "How did you find us?"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": ""
-                        },
-                        {
-                          "type": "datapill",
-                          "dataPill": {
-                            "value": "{{vaInputs.how_you_found_us_variable}}",
-                            "displayValue": "Input Variables➛How You Found Us"
                           },
                           "children": [
                             {
@@ -369,11 +351,11 @@
                       ]
                     }
                   ],
-                  "id": "18bb84bec06d4795972432a94282bb17"
+                  "id": "465a4127a0f54950858450e6618c7c82"
                 }
               ]
             },
-            "queryString": "opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user.first_name}} {{vaInputs.user.last_name}} ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.brief_description_user_input}}\n\nHow did you find us?\n{{vaInputs.how_you_found_us_variable}}"
+            "queryString": "opened_by={{vaInputs.user}}^price=300^short_description=Virtual Ninja assistance ticket^description={{vaInputs.user}}{{vaInputs.user.user_name}} {{vaInputs.user.first_name}}{{vaInputs.user.last_name}}ask for direct contact on project details on {{vaInputs.user.email}}. \n\nPlease find user input:\n\n{{vaInputs.user_input}}"
           },
           "mode": "create",
           "record": "",
@@ -383,7 +365,7 @@
           },
           "attachments": [
             {
-              "value": "{{vaInputs.attachment_user_input}}",
+              "value": "{{vaInputs.attachment_input}}",
               "mode": "data_pill"
             }
           ],
@@ -491,7 +473,7 @@
         "6108e86cb2a74dc295bdf6f4295ac617": {
           "id": "6108e86cb2a74dc295bdf6f4295ac617",
           "stepType": "TextOutput",
-          "name": "Info message",
+          "name": "info message",
           "secure": false,
           "value": [
             {
@@ -518,7 +500,7 @@
         "df103f5e05d9425fb2e2c41a2c4d12af": {
           "id": "df103f5e05d9425fb2e2c41a2c4d12af",
           "stepType": "TextPrompt",
-          "name": "Brief Description User input",
+          "name": "User input",
           "prompt": {
             "value": [
               {
@@ -578,7 +560,7 @@
         "bb07f93b3bfb4d2fa090ac34d529ae02": {
           "id": "bb07f93b3bfb4d2fa090ac34d529ae02",
           "stepType": "FilePrompt",
-          "name": "Attachment  User input",
+          "name": "Attachment input",
           "prompt": {
             "value": [
               {
@@ -683,7 +665,7 @@
         "c99a7ddddd4746399e9fffc293b543ab": {
           "id": "c99a7ddddd4746399e9fffc293b543ab",
           "stepType": "TextOutput",
-          "name": "Info message",
+          "name": "info message",
           "secure": false,
           "value": [
             {
@@ -817,7 +799,7 @@
         "a92ee84535eb42d88a6ef0d6131fdaa4": {
           "id": "a92ee84535eb42d88a6ef0d6131fdaa4",
           "stepType": "TextPrompt",
-          "name": "Update chosen Record",
+          "name": "Update choosen req",
           "prompt": {
             "value": [
               {
@@ -876,7 +858,7 @@
                   "prefix": "",
                   "operator": "=",
                   "operand": "comments",
-                  "expression": "{{vaInputs.update_chosen_record}}",
+                  "expression": "{{vaInputs.update_choosen_req}}",
                   "deserializedExpression": [
                     {
                       "type": "paragraph",
@@ -887,7 +869,7 @@
                         {
                           "type": "datapill",
                           "dataPill": {
-                            "value": "{{vaInputs.update_chosen_record}}",
+                            "value": "{{vaInputs.update_choosen_req}}",
                             "displayValue": "Input Variables➛Update Choosen Req"
                           },
                           "children": [
@@ -906,7 +888,7 @@
                 }
               ]
             },
-            "queryString": "comments={{vaInputs.update_chosen_record}}"
+            "queryString": "comments={{vaInputs.update_choosen_req}}"
           },
           "mode": "update",
           "record": "c2915b94364049438157fd48b0dc8c29",
@@ -1023,7 +1005,7 @@
         "94087bac8a12407d9b9f426cbf46fbca": {
           "id": "94087bac8a12407d9b9f426cbf46fbca",
           "stepType": "BooleanPrompt",
-          "name": "Need more help?",
+          "name": "need more help?",
           "prompt": {
             "value": [
               {
@@ -1074,7 +1056,7 @@
         "e5d7fd5cbddf4aa6b88dbfe010411804": {
           "id": "e5d7fd5cbddf4aa6b88dbfe010411804",
           "stepType": "TextOutput",
-          "name": "3D Design Knowledge",
+          "name": "Knowledge Base",
           "secure": false,
           "value": [
             {
@@ -1083,15 +1065,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "Curious about the amazing possibilities of 3D printing? You're in the right place! We'll explore the diverse world of 3D models, from simple prototypes to intricate designs, and how they can be brought to life through 3D printing. Discover the different materials, techniques, and applications that make 3D printing so versatile."
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "Let's explore the exciting world of creating physical objects from digital designs!"
+                      "text": "Choosing this option you can find newest Articles related to 3D Design Knowledge."
                     }
                   ]
                 }
@@ -1109,7 +1083,7 @@
         "d58e70ba7886460396fd76161028923d": {
           "id": "d58e70ba7886460396fd76161028923d",
           "stepType": "RecordOutput",
-          "name": "Special  KBA",
+          "name": "Choosed KBA",
           "variableId": "",
           "cardTemplate": "Large image with text",
           "cardFields": {
@@ -1432,105 +1406,22 @@
             "mode": "glide_query",
             "value": ""
           }
-        },
-        "18413d2f9715444a852d11ee7c2f73d0": {
-          "name": "How you found us Variable",
-          "prompt": {
-            "value": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "text": "How did you find us?"
-                  }
-                ]
-              }
-            ],
-            "mode": "simple"
-          },
-          "confirmMessage": {
-            "value": "",
-            "mode": "simple"
-          },
-          "acknowledgeMsg": {
-            "value": "",
-            "mode": "simple"
-          },
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          },
-          "skippable": {
-            "value": "",
-            "mode": "query"
-          },
-          "skipReprompt": {
-            "value": "",
-            "mode": "query"
-          },
-          "defaultValue": {
-            "value": "",
-            "mode": "simple"
-          },
-          "variableId": "c0ae3fd15dd747e7ba6aff1a707f732b",
-          "detailDescription": "",
-          "id": "18413d2f9715444a852d11ee7c2f73d0",
-          "stepType": "ChoicePrompt",
-          "hasCardHeader": false,
-          "cardMetadata": {
-            "mode": "card",
-            "metadataScript": "",
-            "cardTemplate": "",
-            "cardFields": {},
-            "cardDefinition": {}
-          },
-          "withNluUserInput": false,
-          "skipIfFulfilled": false
-        },
-        "e9ae32d90266452da5f4685b0b279ff4": {
-          "id": "e9ae32d90266452da5f4685b0b279ff4",
-          "stepType": "HtmlOutput",
-          "name": "HTML link list",
-          "value": "\n\n\n&lt;a href='https://dev268658.service-now.com/3dninjashop?id=kb_view2'&gt;3D BLOG -Boost your knowledge with us!&lt;/a&gt;\n&lt;a href='https://dev268658.service-now.com/3dninjashop/en/3d-printing-home-design-trends-2025?id=kb_article&amp;sys_id=2695f8ad83e39210a7c1e970deaad31a'&gt;3D Printing Home Design trends 2025!&lt;/a&gt;\n&lt;a href='https://dev268658.service-now.com/3dninjashop/en/3d-printed-furniture-this-is-real?id=kb_article&amp;sys_id=0f65f0ad83e39210a7c1e970deaad33f'&gt;3D Printed Furniture - this is real!&lt;/a&gt;\n&lt;a href='https://dev268658.service-now.com/3dninjashop/en/3d-printing-basics?id=kb_article&amp;sys_id=33b5bcad83e39210a7c1e970deaad3a7'&gt;3D Printing Basics&lt;/a&gt;",
-          "height": "0",
-          "width": "0",
-          "requestFeedback": true,
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          }
         }
       },
       "edges": [
-        {
-          "id": "bee2e5a146bc40e89a7b7989bb564745",
-          "edgeType": "Edge",
-          "source": "e5d7fd5cbddf4aa6b88dbfe010411804",
-          "target": "e9ae32d90266452da5f4685b0b279ff4",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "5b175aad6364452f82951827294deb7e",
-          "edgeType": "Edge",
-          "source": "d58e70ba7886460396fd76161028923d",
-          "target": "94087bac8a12407d9b9f426cbf46fbca",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "1e0a9d1286044be080fe413fcd352bc4",
-          "edgeType": "Edge",
-          "source": "18826ca26b0545918a77b5bb3a35cecc",
-          "target": "9ddbed90de5d4cdb8bc7b2dcd938f043",
-          "sourcePort": "",
-          "targetPort": ""
-        },
         {
           "id": "923c14caa6bc48679b993c61ae6fe628",
           "edgeType": "Edge",
           "source": "7664792c386748aab3d937bd7a9562d7",
           "target": "14b38bc46a6c4560be4158ae0b95bcc0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bee2e5a146bc40e89a7b7989bb564745",
+          "edgeType": "Edge",
+          "source": "e5d7fd5cbddf4aa6b88dbfe010411804",
+          "target": "d58e70ba7886460396fd76161028923d",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -1618,6 +1509,22 @@
           "edgeType": "Edge",
           "source": "6108e86cb2a74dc295bdf6f4295ac617",
           "target": "df103f5e05d9425fb2e2c41a2c4d12af",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c5642ef6c78c4109b71af81823610820",
+          "edgeType": "Edge",
+          "source": "bb07f93b3bfb4d2fa090ac34d529ae02",
+          "target": "7664792c386748aab3d937bd7a9562d7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1e0a9d1286044be080fe413fcd352bc4",
+          "edgeType": "Edge",
+          "source": "18826ca26b0545918a77b5bb3a35cecc",
+          "target": "9ddbed90de5d4cdb8bc7b2dcd938f043",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -1733,26 +1640,10 @@
           "label": "3D design news"
         },
         {
-          "id": "c5642ef6c78c4109b71af81823610820",
+          "id": "5b175aad6364452f82951827294deb7e",
           "edgeType": "Edge",
-          "source": "bb07f93b3bfb4d2fa090ac34d529ae02",
-          "target": "18413d2f9715444a852d11ee7c2f73d0",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "29b35ea37c0740d785eb0c7a1688f720",
-          "edgeType": "Edge",
-          "source": "18413d2f9715444a852d11ee7c2f73d0",
-          "target": "7664792c386748aab3d937bd7a9562d7",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "c1ea6aa1de4e415786ac70255140dba5",
-          "edgeType": "Edge",
-          "source": "e9ae32d90266452da5f4685b0b279ff4",
-          "target": "d58e70ba7886460396fd76161028923d",
+          "source": "d58e70ba7886460396fd76161028923d",
+          "target": "94087bac8a12407d9b9f426cbf46fbca",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -1812,8 +1703,8 @@
     },
     "fff2340ce59041939057820390cca48d": {
       "id": "fff2340ce59041939057820390cca48d",
-      "name": "brief_description_user_input",
-      "label": "Brief Description User Input",
+      "name": "user_input",
+      "label": "User Input",
       "varType": "string",
       "secure": false,
       "category": "vaInputs",
@@ -1827,8 +1718,8 @@
     },
     "cd67df71aaf3455f978413fe22348941": {
       "id": "cd67df71aaf3455f978413fe22348941",
-      "name": "attachment_user_input",
-      "label": "Attachment  User Input",
+      "name": "attachment_input",
+      "label": "Attachment Input",
       "varType": "image",
       "secure": false,
       "category": "vaInputs",
@@ -1849,8 +1740,8 @@
     },
     "b08bf8c9f16844dca0964e7418201e57": {
       "id": "b08bf8c9f16844dca0964e7418201e57",
-      "name": "update_chosen_record",
-      "label": "Update Chosen Record",
+      "name": "update_choosen_req",
+      "label": "Update Choosen Req",
       "varType": "string",
       "secure": false,
       "category": "vaInputs",
@@ -1882,78 +1773,23 @@
       "category": "vaInputs",
       "nodeId": "94087bac8a12407d9b9f426cbf46fbca",
       "isHidden": false
-    },
-    "c0ae3fd15dd747e7ba6aff1a707f732b": {
-      "id": "c0ae3fd15dd747e7ba6aff1a707f732b",
-      "name": "how_you_found_us_variable",
-      "label": "How You Found Us Variable",
-      "varType": "choice",
-      "choices": [
-        {
-          "label": "Google",
-          "value": "Google"
-        },
-        {
-          "label": "TikTok",
-          "value": "TikTok"
-        },
-        {
-          "label": "TV spot",
-          "value": "TV spot",
-          "checked": true,
-          "meta": {}
-        },
-        {
-          "label": "Own search",
-          "value": "Own search",
-          "checked": true,
-          "meta": {}
-        },
-        {
-          "label": "Friend recommendation",
-          "value": "Friend recommendation",
-          "checked": true,
-          "meta": {}
-        }
-      ],
-      "category": "vaInputs",
-      "nodeId": "18413d2f9715444a852d11ee7c2f73d0",
-      "isHidden": false
     }
   }
 }</graph>
-        <key_phrases>3D Ninja Shop,3d,3d print,3d items,ninja shop</key_phrases>
-        <library>false</library>
-        <live_agent>false</live_agent>
-        <model_type>nlu_keyword</model_type>
-        <modify_confirmation_enabled>false</modify_confirmation_enabled>
-        <name>3D Ninja Shop</name>
-        <nlu_intent/>
-        <nlu_intent_label/>
-        <nlu_model/>
-        <nlu_model_label/>
-        <nlu_provider/>
-        <palette_label/>
-        <roles/>
-        <root_topic_id/>
-        <secure_custom_input_control>false</secure_custom_input_control>
-        <source_topic_id/>
-        <sys_class_name>sys_cb_topic</sys_class_name>
+        <name>_PRVW__3770698f9c2946c1a0a7307ec339fc6f</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 14:06:09</sys_created_on>
+        <sys_created_on>2025-03-04 14:22:54</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>918318e983002210a7c1e970deaad36a</sys_id>
-        <sys_mod_count>97</sys_mod_count>
-        <sys_name>3D Ninja Shop</sys_name>
+        <sys_id>f98a6a8283c42210a7c1e970deaad383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
         <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
         <sys_policy/>
         <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
-        <sys_update_name>sys_cb_topic_918318e983002210a7c1e970deaad36a</sys_update_name>
+        <sys_update_name>sys_cb_design_topic_f98a6a8283c42210a7c1e970deaad383</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-04 15:35:06</sys_updated_on>
-        <title>Virtual Ninja</title>
-        <triggerable_by_notification>false</triggerable_by_notification>
-        <type>STANDARD</type>
-    </sys_cb_topic>
-    <sys_translated_text action="delete_multiple" query="documentkey=918318e983002210a7c1e970deaad36a"/>
+        <sys_updated_on>2025-03-04 14:22:54</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
 </record_update>
