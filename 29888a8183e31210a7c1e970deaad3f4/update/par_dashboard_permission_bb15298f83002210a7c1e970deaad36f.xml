@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="3D Models Shop">b2073a9383e31210a7c1e970deaad339</dashboard>
+        <group display_value="Ninja Support" name="Ninja Support">a1eef94983a31210a7c1e970deaad3b5</group>
+        <owner>false</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-07 11:53:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb15298f83002210a7c1e970deaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b2073a9383e31210a7c1e970deaad339</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="3D Ninja Shop" source="x_1514542_3d_ninja">29888a8183e31210a7c1e970deaad3f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="3D Ninja Shop">29888a8183e31210a7c1e970deaad3f4</sys_scope>
+        <sys_update_name>par_dashboard_permission_bb15298f83002210a7c1e970deaad36f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-07 11:53:33</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>
